@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-// #include "defines.h"
+#include "defines.h"
 
 // &mt {
 //    // flavor = "tap-preferred";
@@ -31,13 +31,16 @@
       bindings = <
 // ╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮
 // |    a    |    z    |    e    |    r    |    t    |  |    y    |    u    |    i    |    o    |    p    |
-      &kp Q     &kp W     &kp E     &kp R     &kp T        &kp Y     &kp U     &kp I     &kp O     &kp P
+      /* &kp Q     &kp W     &kp E     &kp R     &kp T        &kp Y     &kp U     &kp I     &kp O     &kp P */
+      _a_       _z_       _e_         _r_     _t_
 // ├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤
 // |    q    |    s    |    d    |    f    |    g    |  |    h    |    j    |    k    |    l    |    m    |
-      &kp A     &kp S     &kp D     &kp F     &kp G        &kp H     &kp J     &kp K     &kp L     &kp QUOT
+      /* &kp A     &kp S     &kp D     &kp F     &kp G        &kp H     &kp J     &kp K     &kp L     &kp QUOT */
+      _q_       _s_       _d_       _f_       _g_
 // ├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤
 // |    w    |    x    |    c    |    v    |    b    |  |    n    |    ,    |    ;    |    :    |    !    |
-      &kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp COMMA  &kp DOT  &kp LSHIFT
+      /* &kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp COMMA  &kp DOT  &kp LSHIFT */
+      _w_       _x_       _c_       _v_       _b_
 // ╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯
 //                               |  Tab    |  Enter  |  |  Space  |  LShift |
                                    &kp  TAB &kp ENTER    &kp SPACE &kp ENTER
