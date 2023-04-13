@@ -1,3 +1,21 @@
+#define _a_ &kp Q
+#define _z_ &kp W
+#define _e_ &kp E
+#define _r_ &kp R
+#define _t_ &kp T
+
+#define _q_ &kp A
+#define _s_ &kp S
+#define _d_ &kp D
+#define _f_ &kp F
+#define _g_ &kp G
+
+#define _w_ &kp Z
+#define _x_ &kp X
+#define _c_ &kp C
+#define _v_ &kp V
+#define _b_ &kp B
+
 // Row 1
 #define IT_BSLH GRAVE            // backslash
 #define IT_SQUOT MINUS           // '
