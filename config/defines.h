@@ -34,12 +34,11 @@
 #define _m_ &kp COLON
 
 // row 3 right
-#define _n_ &kp N
-#define _,_ &kp M
-#define _;_ &kp COMMA
-#define _:_ &kp DOT
-#define _!_ &kp SLASH
-
+#define _n_           &kp N
+#define _comma_       &kp M
+#define _semi_colon_  &kp COMMA
+#define _colon_       &kp DOT
+#define _exclamation_ &kp SLASH
 
 
 
