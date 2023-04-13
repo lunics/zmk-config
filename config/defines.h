@@ -1,20 +1,47 @@
+// row 1 left
 #define _a_ &kp Q
 #define _z_ &kp W
 #define _e_ &kp E
 #define _r_ &kp R
 #define _t_ &kp T
 
+// row 2 left
 #define _q_ &kp A
 #define _s_ &kp S
 #define _d_ &kp D
 #define _f_ &kp F
 #define _g_ &kp G
 
+// row 3 left
 #define _w_ &kp Z
 #define _x_ &kp X
 #define _c_ &kp C
 #define _v_ &kp V
 #define _b_ &kp B
+
+// row 1 right
+#define _y_ &kp Y
+#define _u_ &kp U
+#define _i_ &kp I
+#define _o_ &kp O
+#define _p_ &kp P
+
+// row 2 right
+#define _h_ &kp H
+#define _j_ &kp J
+#define _k_ &kp K
+#define _l_ &kp L
+#define _m_ &kp COLON
+
+// row 3 right
+#define _n_ &kp N
+#define _,_ &kp M
+#define _;_ &kp COMMA
+#define _:_ &kp DOT
+#define _!_ &kp SLASH
+
+
+
 
 // Row 1
 #define IT_BSLH GRAVE            // backslash
