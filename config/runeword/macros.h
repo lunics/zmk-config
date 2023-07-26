@@ -79,5 +79,3 @@ NAME: NAME { \
   tapping-term-ms = <200>; \
   bindings = <TAP_1>, <TAP_2>, <TAP_3>; \
 };
-
-

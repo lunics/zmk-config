@@ -1,49 +1,36 @@
-// row 1 left
-#define _a_ &kp Q
-#define _z_ &kp W
-#define _e_ &kp E
-#define _r_ &kp R
-#define _t_ &kp T
+#define a_ &kp Q
+#define b_ &kp B
+#define c_ &kp C
+#define d_ &kp D
+#define e_ &kp E
+#define f_ &kp F
+#define g_ &kp G
+#define h_ &kp H
+#define i_ &kp I
+#define j_ &kp J
+#define k_ &kp K
+#define l_ &kp L
+#define m_ &kp COLON
+#define n_ &kp N
+#define o_ &kp O
+#define p_ &kp P
+#define q_ &kp A
+#define r_ &kp R
+#define s_ &kp S
+#define t_ &kp T
+#define u_ &kp U
+#define v_ &kp V
+#define w_ &kp Z
+#define x_ &kp X
+#define y_ &kp Y
+#define z_ &kp W
 
-// row 2 left
-#define _q_ &kp A
-#define _s_ &kp S
-#define _d_ &kp D
-#define _f_ &kp F
-#define _g_ &kp G
+#define comma_  &kp M       // ,
+#define unknonwn_ &kp COMMA   // ?
+#define colon_  &kp DOT     // :
+#define excla_  &kp SLASH   // !
 
-// row 3 left
-#define _w_ &kp Z
-#define _x_ &kp X
-#define _c_ &kp C
-#define _v_ &kp V
-#define _b_ &kp B
-
-// row 1 right
-#define _y_ &kp Y
-#define _u_ &kp U
-#define _i_ &kp I
-#define _o_ &kp O
-#define _p_ &kp P
-
-// row 2 right
-#define _h_ &kp H
-#define _j_ &kp J
-#define _k_ &kp K
-#define _l_ &kp L
-#define _m_ &kp COLON
-
-// row 3 right
-#define _n_     &kp N
-#define _comma_ &kp M
-#define _semi_  &kp COMMA
-#define _colon_ &kp DOT
-#define _excla_ &kp SLASH
-
-
-
-// Row 1
-#define IT_BSLH GRAVE            // backslash
+#define IT_BSLH GRAVE            // \
 #define IT_SQUOT MINUS           // '
 #define IT_IGRV EQUAL            // ì
 // Row 2
