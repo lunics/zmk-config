@@ -34,5 +34,3 @@ COMBO(cb_L##MOD##_M,     50, po_T1 po_L##MOD 26, <&kp L##MOD(M)>)     \
 COMBO(cb_L##MOD##_W,     50, po_T1 po_L##MOD 27, <&kp L##MOD(W)>)     \
 COMBO(cb_L##MOD##_V,     50, po_T1 po_L##MOD 28, <&kp L##MOD(V)>)     \
 COMBO(cb_L##MOD##_Z,     50, po_T1 po_L##MOD 29, <&kp L##MOD(Z)>)
-
-
