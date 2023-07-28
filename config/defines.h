@@ -39,13 +39,17 @@
 #define enter_ &kp ENTER
 #define tab_   &kp TAB
 #define space_ &kp SPACE
-#define comma_  &kp M      // ,
-#define scolon_ &kp COMMA  // ;
-#define colon_  &kp DOT    // :
-#define excla_  &kp SLASH  // !
+// ,
+#define comma_  &kp M
+// ;
+#define scolon_ &kp COMMA
+// :
+#define colon_  &kp DOT
+// !
+#define excla_  &kp SLASH
 
 #define l_def  0
-#define l_num  1    // layer numbers
+#define l_num  1
 #define l_sym  2
 #define l_nav  3
 #define l_lmod 4
