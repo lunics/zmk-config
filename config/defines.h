@@ -10,7 +10,7 @@
 #define j_ &kp J
 #define k_ &kp K
 #define l_ &kp L
-#define m_ &kp COLON
+#define M_ &kp COLON
 #define n_ &kp N
 #define o_ &kp O
 #define p_ &kp P
@@ -25,10 +25,39 @@
 #define y_ &kp Y
 #define z_ &kp W
 
-#define comma_  &kp M       // ,
-#define unknonwn_ &kp COMMA   // ?
-#define colon_  &kp DOT     // :
-#define excla_  &kp SLASH   // !
+#define 0_ &kp NUMBER_0
+#define 1_ &kp NUMBER_1
+#define 2_ &kp NUMBER_2
+#define 3_ &kp NUMBER_3
+#define 4_ &kp NUMBER_4
+#define 5_ &kp NUMBER_5
+#define 6_ &kp NUMBER_6
+#define 7_ &kp NUMBER_7
+#define 8_ &kp NUMBER_8
+#define 9_ &kp NUMBER_9
+
+#define enter_ &kp ENTER
+#define tab_   &kp TAB
+#define space_ &kp SPACE
+#define comma_  &kp M      // ,
+#define scolon_ &kp COMMA  // ;
+#define colon_  &kp DOT    // :
+#define excla_  &kp SLASH  // !
+
+#define l_def  0
+#define l_num  1    // layer numbers
+#define l_sym  2
+#define l_nav  3
+#define l_lmod 4
+#define l_rmod 5
+#define l_fun  7
+
+#define ko_ &none
+
+
+
+
+
 
 #define IT_BSLH GRAVE            // \
 #define IT_SQUOT MINUS           // '
