@@ -26,13 +26,13 @@
 #define y_ &kp Y
 #define z_ &kp W
 
-#define enter_  &kp ENTER
-#define tab_    &kp TAB
-#define space_  &kp SPACE
-#define comma_  &kp M     // ,
-#define scolon_ &kp COMMA // ;
-#define colon_  &kp DOT   // :
-#define excla_  &kp SLASH // !
+#define enter  &kp ENTER
+#define tab    &kp TAB
+#define space  &kp SPACE
+#define comma  &kp M     // ,
+#define scolon &kp COMMA // ;
+#define colon  &kp DOT   // :
+#define excla  &kp SLASH // !
 
 #define num_0 &kp NUMBER_0
 #define num_1 &kp NUMBER_1
@@ -54,7 +54,7 @@
 #define l_rmod 5
 #define l_fun  7
 
-#define ko_ &none
+#define ko &none
 
 
 
