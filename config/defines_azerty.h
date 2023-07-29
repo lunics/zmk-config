@@ -47,7 +47,7 @@
 
 #define num_0 &kp RIGHT_PARENTHESIS
 #define num_1 &kp EXCLAMATION
-#define num_2 &kp DOUBLE_QUOTES
+#define num_2 &kp AT_SIGN       // KO DOUBLE_QUOTES
 #define num_3 &kp POUND
 #define num_4 &kp DOLLAR
 #define num_5 &kp PERCENT
