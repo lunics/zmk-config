@@ -116,8 +116,7 @@
 
     MACRO_TAP(mc_grave_a,      &kp RA(GRAVE)    &kp A)
     MACRO_TAP(mc_grave_e,      &kp RA(GRAVE)    &kp E)
-    MACRO_TAP(mc_grave_u,      &kp RA(GRAVE)    &kp U)
-    MACRO_TAP(mc_circumflex_a, &kp RA(NUMBER_6) &kp A)
+    MACRO_TAP(mc_grave_u,      &kp RA(GRAVE)    &kp U) MACRO_TAP(mc_circumflex_a, &kp RA(NUMBER_6) &kp A)
     MACRO_TAP(mc_circumflex_o, &kp RA(NUMBER_6) &kp O)
     MACRO_TAP(mc_circumflex_e, &kp RA(NUMBER_6) &kp E)
     MACRO_TAP(mc_circumflex_u, &kp RA(NUMBER_6) &kp U)
