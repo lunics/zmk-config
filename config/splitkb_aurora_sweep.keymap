@@ -34,7 +34,7 @@
   keymap {
     compatible = "zmk,keymap";
 
-    default_layer {
+    default {
       bindings = <
 //╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮
       a_       z_       e_       r_       t_          y_       u_       i_       o_       p_
