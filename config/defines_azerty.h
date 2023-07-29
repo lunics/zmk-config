@@ -45,17 +45,16 @@
 #define c_cedille &kp NUMBER_9  // ç
 #define a_grave   &kp NUMBER_0  // à
 
-#define num_0 $kp RIGHT_PARENTHESIS
-#define num_1 $kp EXCLAMATION
-#define num_2 $kp DOUBLE_QUOTES
-#define num_3 $kp POUND
-#define num_4 $kp DOLLAR
-#define num_5 $kp PERCENT
-#define num_6 $kp CARET
-#define num_7 $kp AMPERSAND
-#define num_8 $kp ASTERISK
-#define num_9 $kp LEFT_PARENTHESIS
-
+#define num_0 &kp RIGHT_PARENTHESIS
+#define num_1 &kp EXCLAMATION
+#define num_2 &kp DOUBLE_QUOTES
+#define num_3 &kp POUND
+#define num_4 &kp DOLLAR
+#define num_5 &kp PERCENT
+#define num_6 &kp CARET
+#define num_7 &kp AMPERSAND
+#define num_8 &kp ASTERISK
+#define num_9 &kp LEFT_PARENTHESIS
 
 
 #define IT_BSLH GRAVE            // \
