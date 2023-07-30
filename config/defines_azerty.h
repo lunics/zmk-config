@@ -1,3 +1,5 @@
+// remapping of QWERTY US in AZERTY FR
+
 #define a_ &kp Q
 #define b_ &kp B
 #define c_ &kp C
@@ -47,8 +49,8 @@
 
 #define num_0 &kp RIGHT_PARENTHESIS
 #define num_1 &kp EXCLAMATION
-#define num_2 &kp AT_SIGN       // KO DOUBLE_QUOTES
-#define num_3 &kp POUND
+#define num_2 &kp AT_SIGN
+#define num_3 &kp HASH
 #define num_4 &kp DOLLAR
 #define num_5 &kp PERCENT
 #define num_6 &kp CARET
