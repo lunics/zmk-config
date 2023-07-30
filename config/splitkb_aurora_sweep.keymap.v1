@@ -1,0 +1,82 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include "defines.h"
+
+// &mt {
+//    // flavor = "tap-preferred";
+//    // tapping_term_ms = <200>;
+// };
+//
+// &sk {
+//   ignore-modifiers;
+//   release-after-ms = <2000>;
+// };
+//
+// &kscan0 {
+//   debounce-period = <10>;
+// };
+
+/ {
+  behaviors {
+    // sticky key behavior with quick-release option that deactivate the sticky key on the next key being pressed
+    skq: sk_quick_release {
+      compatible       = "zmk,behavior-sticky-key";
+      label            = "sk_quick_release";
+      #binding-cells   = <1>;
+      bindings         = <&kp>;
+      release-after-ms = <200>;
+      quick-release;
+      /delete-property/ ignore-modifiers;
+    };
+  };
+
+  keymap {
+    compatible = "zmk,keymap";
+
+    default {
+      bindings = <
+//╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮
+      a_       z_       e_       r_       t_          y_       u_       i_       o_       p_
+//├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤
+      q_       s_       d_       f_       g_          h_       j_       k_       l_       m_
+//├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤
+      w_       x_       c_       v_       b_          n_     comma    scolon   colon    excla
+//╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯
+                               sl_num   enter       space    enter
+//                           ╰────────┴────────╯  ╰────────┴────────╯
+    >;};
+    numbers {
+      bindings = <
+//╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮
+      ko       ko       ko       ko       ko         num_7    num_8    num_9     ko       ko
+//├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤
+      ko       ko       ko       ko       ko         num_4    num_5    num_6     ko       ko
+//├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤
+      ko       ko       ko       ko       ko         num_1    num_2    num_3    num_0     ko
+//╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯
+                                ko      enter       space    enter
+//                           ╰────────┴────────╯  ╰────────┴────────╯
+    >;};
+    symbols {
+      bindings = <
+//╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮
+      ko       ko       ko       ko       ko         num_7    num_8    num_9     ko       ko
+//├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤
+      ko       ko       ko       ko       ko         num_4    num_5    num_6     ko       ko
+//├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤
+      ko       ko       ko       ko       ko         num_1    num_2    num_3    num_0     ko
+//╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯
+                                ko      enter       space    enter
+//                           ╰────────┴────────╯  ╰────────┴────────╯
+       ` = RIGHT_ALT 7
+
+        &kp GRAVE &kp MINUS &kp EQUAL &kp PLUS &none     &kp AT &kp LBKT &kp RBKT &kp SLASH &kp BSLH
+        &kp EXCL &kp QUESTION &kp HASH &kp STAR &none    &kp TILDE &kp LPAR &kp RPAR &kp CARET &kp DLLR
+        &kp AMPS &kp PIPE &kp UNDER &kp PRCNT &none      &none &kp LBRC &kp RBRC &none &none
+        &trans &trans &trans &trans
+        >;
+    };
+
+  };
+};

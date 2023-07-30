@@ -11,4 +11,5 @@
 
 #define sl_num &sl 1  // sticky layout numbers
 
-#define ko &none
+#define null &none
+#define ko   &none
