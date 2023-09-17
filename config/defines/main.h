@@ -1,4 +1,4 @@
-#include "azerty.h"
+#include "defines/azerty.h"
 /* #include "qwerty.h" */
 /* #include "macros.h" */
 
