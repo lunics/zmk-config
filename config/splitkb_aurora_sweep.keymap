@@ -3,20 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include "defines/main.h"
 
-// &mt {
-//    // flavor = "tap-preferred";
-//    // tapping_term_ms = <200>;
-// };
-//
-// &sk {
-//   ignore-modifiers;
-//   release-after-ms = <2000>;
-// };
-//
-// &kscan0 {
-//   debounce-period = <10>;
-// };
-
 / {
   behaviors {
     // sticky key behavior with quick-release option that deactivate the sticky key on the next key being pressed
@@ -69,14 +55,6 @@
 //╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯
                                 ko      enter       space    enter
 //                           ╰────────┴────────╯  ╰────────┴────────╯
-       ` = RIGHT_ALT 7
-
-        &kp GRAVE &kp MINUS &kp EQUAL &kp PLUS &none     &kp AT &kp LBKT &kp RBKT &kp SLASH &kp BSLH
-        &kp EXCL &kp QUESTION &kp HASH &kp STAR &none    &kp TILDE &kp LPAR &kp RPAR &kp CARET &kp DLLR
-        &kp AMPS &kp PIPE &kp UNDER &kp PRCNT &none      &none &kp LBRC &kp RBRC &none &none
-        &trans &trans &trans &trans
-        >;
-    };
-
+    >;};
   };
 };
