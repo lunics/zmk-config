@@ -1,3 +1,29 @@
+#define HM(NAME, HOLD, TAP, TRIGGER_POS) \
+NAME: NAME { \
+  label = #NAME; \
+  compatible = "zmk,behavior-hold-tap"; \
+  #binding-cells = <2>; \
+  tapping-term-ms = <270>; \
+  quick-tap-ms = <170>; \
+  global-quick-tap; \
+  flavor = "balanced"; \
+  bindings = <HOLD>, <TAP>; \
+  hold-trigger-key-positions = <TRIGGER_POS>; \
+  hold-trigger-on-release; \
+};
+
+#define HMM(NAME, HOLD, TAP, TRIGGER_POS) \
+NAME: NAME { \
+  label = #NAME; \
+  compatible = "zmk,behavior-hold-tap"; \
+  #binding-cells = <2>; \
+  tapping-term-ms = <270>; \
+  quick-tap-ms = <170>; \
+  global-quick-tap; \
+  flavor = "balanced"; \
+  bindings = <HOLD>, <TAP>; \
+};
+
 // hold-tap behavior that take two macros, one activated on hold, one activated on tap
 #define HOLDTAP_MACRO(NAME, MACRO_HOLD, MACRO_TAP) \
 NAME: NAME { \
@@ -79,3 +105,4 @@ NAME: NAME { \
   tapping-term-ms = <200>; \
   bindings = <TAP_1>, <TAP_2>, <TAP_3>; \
 };
+
