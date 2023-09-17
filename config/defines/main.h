@@ -1,5 +1,5 @@
-#include "defines_azerty.h"
-/* #include "defines_qwerty.h" */
+#include "azerty.h"
+/* #include "qwerty.h" */
 /* #include "macros.h" */
 
 #define l_def  0      // layout default
