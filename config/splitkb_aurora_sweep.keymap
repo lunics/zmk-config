@@ -15,7 +15,7 @@
 
     default {
       bindings = <
-        default_layer
+        DEFAULT_LAYER
     >;};
     numbers {
       bindings = <
