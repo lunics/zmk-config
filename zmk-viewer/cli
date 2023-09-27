@@ -1,7 +1,0 @@
-zmk-viewer
-  generate -f ~/zmk-config/config/file.keymap
-    cradio
-    splitkb/aurora/sweep/rev1
-      <empty>       output an image for each layer
-      --unified     output one image with all layers stacked
-      --single      output one image with all layers

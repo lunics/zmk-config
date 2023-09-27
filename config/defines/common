@@ -1,0 +1,41 @@
+#define enter   &kp ENTER
+#define tab     &kp TAB
+#define space   &kp SPACE
+#define home    &kp HOME
+#define end     &kp END
+#define pg_dn   &kp PG_DN
+#define pg_up   &kp PG_UP
+#define left    &kp LEFT
+#define right   &kp RIGHT
+#define down    &kp DOWN
+#define up      &kp UP
+#define prev    &kp C_PREV
+#define next    &kp C_NEXT
+#define play    &kp C_PLAY_PAUSE
+#define vol_up  &kp C_VOL_UP
+#define vol_dn  &kp C_VOL_DN
+#define bri_up  &kp C_BRI_UP
+#define bri_dn  &kp C_BRI_DN
+#define F1      &kp F1
+#define F2      &kp F2
+#define F3      &kp F3
+#define F4      &kp F4
+#define F5      &kp F5
+#define F6      &kp F6
+#define F7      &kp F7
+#define F8      &kp F8
+#define F9      &kp F9
+#define F10     &kp F10
+#define F11     &kp F11
+#define F12     &kp F12
+
+#define sl_num  &sl 1  // sticky layout numbers
+#define trans   &trans
+#define null    &none
+#define ko      &none
+#define none    &none
+
+#define bt_clr  &bt BT_CLR
+#define bt_prv  &bt BT_PRV
+#define bt_nxt  &bt BT_NXT
+#define bt_sel  &bt BT_SEL

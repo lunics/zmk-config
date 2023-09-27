@@ -1,0 +1,10 @@
+#define LAYER_SPECIAL \
+/*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
+   a_ccmflx o_ccmflx e_ccmflx u_ccmflx i_ccmlfx     trans    trans   c_cedille trans    trans
+/*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
+   a_grave  e_grave  e_acute  u_grave   trans       trans    trans    trans    trans    trans
+/*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
+     trans   trans   e_trema  u_trema  i_trema      trans    trans    trans    trans    trans
+/*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
+                               trans    trans       trans    trans
+/*                           ╰────────┴────────╯  ╰────────┴────────╯                           */

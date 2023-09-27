@@ -1,0 +1,56 @@
+// remapping of QWERTY US in AZERTY FR
+
+#define a_ &kp Q
+#define b_ &kp B
+#define c_ &kp C
+#define d_ &kp D
+#define e_ &kp E
+#define f_ &kp F
+#define g_ &kp G
+#define h_ &kp H
+#define i_ &kp I
+#define j_ &kp J
+#define k_ &kp K
+#define l_ &kp L
+#define n_ &kp N
+#define m_ &kp SEMICOLON
+#define M_ &kp COLON
+#define o_ &kp O
+#define p_ &kp P
+#define q_ &kp A
+#define r_ &kp R
+#define s_ &kp S
+#define t_ &kp T
+#define u_ &kp U
+#define v_ &kp V
+#define w_ &kp Z
+#define x_ &kp X
+#define y_ &kp Y
+#define z_ &kp W
+
+#define comma     &kp M        // ,
+#define scolon    &kp COMMA    // ;
+#define colon     &kp DOT      // :
+#define excla     &kp SLASH    // !
+
+#define ampersand &kp NUMBER_1  // &
+//#define e_aigu    &kp NUMBER_2  // é
+#define dquote    &kp NUMBER_3  // "
+#define squote    &kp NUMBER_4  // '
+#define parenthes &kp NUMBER_5  // (
+#define minus     &kp NUMBER_6  // -
+//#define e_grave   &kp NUMBER_7  // è
+#define undersc   &kp NUMBER_8  // _
+//#define c_cedilla &kp NUMBER_9  // ç
+//#define a_grave   &kp NUMBER_0  // à
+
+#define num_0 &kp RIGHT_PARENTHESIS
+#define num_1 &kp EXCLAMATION
+#define num_2 &kp AT_SIGN
+#define num_3 &kp HASH
+#define num_4 &kp DOLLAR
+#define num_5 &kp PERCENT
+#define num_6 &kp CARET
+#define num_7 &kp AMPERSAND
+#define num_8 &kp ASTERISK
+#define num_9 &kp LEFT_PARENTHESIS
