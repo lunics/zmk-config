@@ -3,21 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "defines/main.h"
-//#include "macros/main.h"
-//#include "behaviors/main.h"
-//#include "combos/main.h"
 #include "layers/main.h"
 
 / {
-  behaviors {
-  };
-  macros {
-  };
-  combos {
-  };
-
   keymap {
     compatible = "zmk,keymap";
     default { bindings = <LAYER_DEFAULT>; };
+    numbers { bindings = <LAYER_NUMBERS>; };
   };
 };
