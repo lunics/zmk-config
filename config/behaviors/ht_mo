@@ -1,4 +1,4 @@
-#defines HT_MO \
+#define HT_MO \
 ht_mo: hold_tap_momentary_layer {\
   compatible      = "zmk,behavior-hold-tap" ;\
   label           = "ht_mo"                 ;\
