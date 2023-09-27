@@ -1,0 +1,7 @@
+#define CB_DEL_R \
+cb_del_r {\
+  layers        = <la_DEF la_NAV> ;\
+  timeout-ms    = <70>            ;\
+  key-positions = <26 27 28>      ;\
+  bindings      = <&kp DEL>       ;\
+};

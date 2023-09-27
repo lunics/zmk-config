@@ -36,9 +36,6 @@
 #define num_8 $kp NUMBER_8
 #define num_9 $kp NUMBER_9
 
-#define enter  &kp ENTER
-#define tab    &kp TAB
-#define space  &kp SPACE
 #define comma  &kp COMMA      // ,
 #define scolon &kp SEMICOLON  // ;
 #define colon  &kp COLON      // :

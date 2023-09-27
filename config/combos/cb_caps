@@ -1,0 +1,7 @@
+#define CB_CAPS \
+cb_caps {\
+  layers        = <la_DEF>      ;\
+  timeout-ms    = <40>          ;\
+  key-positions = <26 27>       ;\
+  bindings      = <&caps_word>  ;\
+};

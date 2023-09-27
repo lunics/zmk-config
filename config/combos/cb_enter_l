@@ -1,0 +1,7 @@
+#define CB_ENTER_L \
+cb_enter_l {\
+  layers        = <la_DEF la_NAV> ;\
+  timeout-ms    = <70>            ;\
+  key-positions = <11 12 13>      ;\
+  bindings      = <&kp ENTER>     ;\
+};

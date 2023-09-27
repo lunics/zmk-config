@@ -1,29 +1,64 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
 #include "defines/main.h"
-#include "behavior_skq.h"
+#include "macros/main.h"
+#include "behaviors/main.h"
+#include "combos/main.h"
 #include "layers/main.h"
 
 / {
   behaviors {
-    TEST
+    HMM(hm_mod_l, &kp, &kp, po_RIGHT)
+    HMM(hm_mod_r, &kp, &kp, po_LEFT)
+    HM(hm_mo_r, &mo, &kp, po_LEFT)
+    HM(hm_mo_l, &mo, &kp, po_RIGHT)
+    HT_MO
+    HT_MO_SK
+    SQK
+    SQKX
+  };
+
+  macros {
+    MACRO_TAP(a_grave,      &kp RA(GRAVE)    &kp A)
+    MACRO_TAP(e_grave,      &kp RA(GRAVE)    &kp E)
+    MACRO_TAP(u_grave,      &kp RA(GRAVE)    &kp U)
+    MACRO_TAP(a_ccmflx,     &kp RA(NUMBER_6) &kp A)
+    MACRO_TAP(o_ccmflx,     &kp RA(NUMBER_6) &kp O)
+    MACRO_TAP(e_ccmflx,     &kp RA(NUMBER_6) &kp E)
+    MACRO_TAP(u_ccmflx,     &kp RA(NUMBER_6) &kp U)
+    MACRO_TAP(i_ccmflx,     &kp RA(NUMBER_6) &kp I)
+    MACRO_TAP(e_trema,      &kp RA(RS(SQT))  &kp E)
+    MACRO_TAP(u_trema,      &kp RA(RS(SQT))  &kp U)
+    MACRO_TAP(i_trema,      &kp RA(RS(SQT))  &kp I)
+    MACRO_TAP(e_acute,      &kp RA(E))
+    MACRO_TAP(c_cedilla,    &kp RA(COMMA))
+    MACRO_TAP(mc_euro,      &kp RA(NUMBER_5))
+    MACRO_TAP(mc_pound,     &kp RA(RS(NUMBER_4)))
+    MACRO_TAP(mc_degree,    &kp RA(RS(NUMBER_0)))
+    MACRO_TAP(mc_trademark, &kp RA(V))
+    MACRO_TAP(mc_copyright, &kp RA(C))
+  };
+  combos {
+    compatible = "zmk,combos";
+    CB_TAB
+    CB_BSPC
+    CB_ESC
+    CB_REPEAT
+    CB_ENTER_L
+    CB_ENTER_R
+    CB_DEL_L
+    CB_DEL_R
+    CB_CAPS
+    CB_BOOT_L
+    CB_BOOT_R
   };
 
   keymap {
     compatible = "zmk,keymap";
-
-    default {
-      bindings = <
-        LAYER_DEFAULT
-    >;};
-    numbers {
-      bindings = <
-        LAYER_NUMBERS
-    >;};
-    symbols {
-      bindings = <
-        LAYER_SYMBOLS
-    >;};
+    default { bindings = <LAYER_DEFAULT>; };
+    numbers { bindings = <LAYER_NUMBERS>; };
+    symbols { bindings = <LAYER_SYMBOLS>; };
   };
 };
