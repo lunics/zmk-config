@@ -12,9 +12,30 @@
   behaviors {
     HMM(hm_mod_l, &kp, &kp, po_RIGHT)
     HMM(hm_mod_r, &kp, &kp, po_LEFT)
-    HM(hm_mo_r, &mo, &kp, po_LEFT)
-    HM(hm_mo_l, &mo, &kp, po_RIGHT)
+    HM(hm_mo_r,   &mo, &kp, po_LEFT)
+    HM(hm_mo_l,   &mo, &kp, po_RIGHT)
     HT_MO
+  };
+
+  macros {
+    MACRO_TAP(a_grave,      &kp RA(GRAVE)    &kp A)
+    MACRO_TAP(e_grave,      &kp RA(GRAVE)    &kp E)
+    MACRO_TAP(u_grave,      &kp RA(GRAVE)    &kp U)
+    MACRO_TAP(a_ccmflx,     &kp RA(NUMBER_6) &kp A)
+    MACRO_TAP(o_ccmflx,     &kp RA(NUMBER_6) &kp O)
+    MACRO_TAP(e_ccmflx,     &kp RA(NUMBER_6) &kp E)
+    MACRO_TAP(u_ccmflx,     &kp RA(NUMBER_6) &kp U)
+    MACRO_TAP(i_ccmflx,     &kp RA(NUMBER_6) &kp I)
+    MACRO_TAP(e_trema,      &kp RA(RS(SQT))  &kp E)
+    MACRO_TAP(u_trema,      &kp RA(RS(SQT))  &kp U)
+    MACRO_TAP(i_trema,      &kp RA(RS(SQT))  &kp I)
+    MACRO_TAP(e_acute,      &kp RA(E))
+    MACRO_TAP(c_cedilla,    &kp RA(COMMA))
+    MACRO_TAP(mc_euro,      &kp RA(NUMBER_5))
+    MACRO_TAP(mc_pound,     &kp RA(RS(NUMBER_4)))
+    MACRO_TAP(mc_degree,    &kp RA(RS(NUMBER_0)))
+    MACRO_TAP(mc_trademark, &kp RA(V))
+    MACRO_TAP(mc_copyright, &kp RA(C))
   };
 
   keymap {
