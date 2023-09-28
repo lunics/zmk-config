@@ -1,10 +1,10 @@
 #define LAYER_NUMBERS \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-      ko       ko       ko       ko       ko         num_7    num_8    num_9     ko       ko      \
+     none     none     none     none     none        num_7    num_8    num_9    none     none     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-      ko       ko       ko       ko       ko         num_4    num_5    num_6     ko       ko      \
+     none     none     none     none     none        num_4    num_5    num_6    none     none     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-      ko       ko       ko       ko       ko         num_1    num_2    num_3    num_0     ko      \
+     none     none     none     none     none        num_1    num_2    num_3    num_0    none     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
-                                ko      enter       space    enter                                \
+                                none     enter       space    enter                               \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */

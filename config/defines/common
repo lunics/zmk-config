@@ -32,7 +32,7 @@
 #define sl_num  &sl 1  // sticky layout numbers
 #define trans   &trans
 #define null    &none
-#define ko      &none
+//#define ko    &none   // KO: parse error: expected number or parenthesized expression
 #define none    &none
 
 #define bt_clr  &bt BT_CLR
