@@ -1,7 +1,7 @@
 #define CB_BOOT_R \
 cb_boot_r {\
-  layers        = <la_DEF>      ;\
+  layers        = <l_def>       ;\
   timeout-ms    = <30>          ;\
-  key-positions = <po_T2 25>    ;\
+  key-positions = <32 25>       ;\
   bindings      = <&bootloader> ;\
 };

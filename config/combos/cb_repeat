@@ -1,6 +1,6 @@
 #define CB_REPEAT \
 cb_repeat {\
-  layers        = <la_DEF>      ;\
+  layers        = <l_def>       ;\
   timeout-ms    = <30>          ;\
   key-positions = <2 3>         ;\
   bindings      = <&key_repeat> ;\
