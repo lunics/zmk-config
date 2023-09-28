@@ -33,8 +33,10 @@
 #define colon     &kp DOT         // :
 #define excla     &kp SLASH       // !
 #define minus     &kp MINUS       // -  ou right parenthese
-#define slash     &kp EXCLAMATION // exclamation
-#define star      &kp STAR        // 8 ou shift -
+#define slash     &kp EXCLAMATION // 1
+#define num_8     &kp S        // 8
+* = shift 8
+/
 
 #define ampersand &kp NUMBER_1  // &
 //#define e_aigu    &kp NUMBER_2  // é

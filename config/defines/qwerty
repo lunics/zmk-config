@@ -36,7 +36,16 @@
 #define num_8 $kp NUMBER_8
 #define num_9 $kp NUMBER_9
 
-#define comma  &kp COMMA      // ,
-#define scolon &kp SEMICOLON  // ;
-#define colon  &kp COLON      // :
-#define excla  &kp SLASH      // !
+#define comma     &kp COMMA             // ,
+#define scolon    &kp SEMICOLON         // ;
+#define colon     &kp COLON             // :
+#define excla     &kp SLASH             // !
+#define plus      &kp PLUS              // +
+#define minus     &kp MINUS             // -
+#define slash     &kp EXCLAMATION       // /
+#define star      &kp STAR              // *
+#define ampersnd  &kp AMPERSAND         // &
+#define dquote    &kp DOUBLE_QUOTES     // "
+#define squote    &kp SINGLE_QUOTE      // '
+#define l_parnts  &kp LEFT_PARENTHESIS  // (
+#define undersc   &kp UNDERSCORE        // _

@@ -1,3 +1,3 @@
 #include "common"
-#include "azerty"
-/* #include "qwerty" */
+/* #include "azerty" */
+#include "qwerty"
