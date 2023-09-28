@@ -1,6 +1,6 @@
 #define CB_BOOT_L \
 cb_boot_l {\
-  layers        = <la_DEF>      ;\
+  layers        = <l_def>      ;\
   timeout-ms    = <30>          ;\
   key-positions = <po_T1 24>    ;\
   bindings      = <&bootloader> ;\
