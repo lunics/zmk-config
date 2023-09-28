@@ -1,4 +1,3 @@
-// &ht_mo_sk la_NAV RSFT
 #define HT_MO_SK \
 ht_mo_sk: hold_tap_momentary_layer_sticky_modifier {\
   compatible      = "zmk,behavior-hold-tap" ;\
