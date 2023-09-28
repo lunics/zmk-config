@@ -14,6 +14,7 @@
     HMM(hm_mod_r, &kp, &kp, po_LEFT)
     HM(hm_mo_r,   &mo, &kp, po_LEFT)
     HM(hm_mo_l,   &mo, &kp, po_RIGHT)
+    HT_MO
   };
 
   keymap {
