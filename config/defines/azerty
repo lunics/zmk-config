@@ -28,10 +28,13 @@
 #define y_ &kp Y
 #define z_ &kp W
 
-#define comma     &kp M        // ,
-#define scolon    &kp COMMA    // ;
-#define colon     &kp DOT      // :
-#define excla     &kp SLASH    // !
+#define comma     &kp M           // ,
+#define scolon    &kp COMMA       // ;
+#define colon     &kp DOT         // :
+#define excla     &kp SLASH       // !
+#define minus     &kp MINUS       // -  ou right parenthese
+#define slash     &kp EXCLAMATION // exclamation
+#define star      &kp STAR        // 8 ou shift -
 
 #define ampersand &kp NUMBER_1  // &
 //#define e_aigu    &kp NUMBER_2  // é

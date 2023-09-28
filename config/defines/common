@@ -1,3 +1,12 @@
+#define l_def  0      // layout default
+#define l_num  1      // numbers
+#define l_sym  2      // symbols
+#define l_nav  3      // navigation
+#define l_med  4      // media
+#define l_spe  5      // special
+#define l_fun  6      // functions
+#define l_har  7      // hardward
+
 #define enter   &kp ENTER
 #define tab     &kp TAB
 #define space   &kp SPACE
@@ -28,12 +37,14 @@
 #define f10     &kp f10
 #define f11     &kp f11
 #define f12     &kp F12
+#define equal   &kp EQUAL
+#define plus    &kp PLUS
 
-#define sl_num  &sl 1  // sticky layout numbers
 #define trans   &trans
 #define null    &none
 //#define ko    &none   // KO: parse error: expected number or parenthesized expression
 #define none    &none
+#define sl_num  &sl 1  // sticky layout numbers
 
 #define bt_clr  &bt BT_CLR
 #define bt_prv  &bt BT_PRV
