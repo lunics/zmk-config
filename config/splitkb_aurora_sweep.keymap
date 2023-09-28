@@ -3,6 +3,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "defines/main.h"
+#include "macros/main.h"
+#include "behaviors/main.h"
+#include "combos/main.h"
 #include "layers/main.h"
 
 / {
