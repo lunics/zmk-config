@@ -41,6 +41,21 @@
     MACRO_TAP(mc_copyright, &kp RA(C))
   };
 
+  combos {
+    compatible = "zmk,combos";
+    CB_TAB
+    CB_BSPC
+    CB_ESC
+    CB_REPEAT
+    CB_ENTER_L
+    CB_ENTER_R
+    CB_DEL_L
+    CB_DEL_R
+    CB_CAPS
+    CB_BOOT_L
+    CB_BOOT_R
+  };
+
   keymap {
     compatible = "zmk,keymap";
     default { bindings = <LAYER_DEFAULT>; };

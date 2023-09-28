@@ -1,8 +1,7 @@
 #define CB_ESC \
 cb_esc {\
-  layers        = <la_DEF>  ;\
+  layers        = <l_def>   ;\
   timeout-ms    = <30>      ;\
   key-positions = <21 22>   ;\
   bindings      = <&kp ESC> ;\
 };
-// cb_esc { layers = <la_DEF>; timeout-ms = <30>; key-positions = <11 12>; bindings = <&hm_mod_l LS(LGUI) ESC>; };

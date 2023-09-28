@@ -1,7 +1,7 @@
 #define CB_BSPC \
 cb_bspc {\
-  layers        = <la_DEF la_NAV> ;\
-  timeout-ms    = <30>            ;\
-  key-positions = <11 12>         ;\
-  bindings      = <&kp BSPC>      ;\
+  layers        = <l_def l_nav> ;\
+  timeout-ms    = <30>          ;\
+  key-positions = <11 12>       ;\
+  bindings      = <&kp BSPC>    ;\
 };
