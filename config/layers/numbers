@@ -1,6 +1,6 @@
 #define LAYER_NUMBERS \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-    trans    trans    trans    trans    trans       num_7    num_8    num_9     plus    minus     \
+    trans    trans    trans    trans    trans       none  none  none     plus    minus     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     trans    trans    trans    trans    trans       none  none  none     star    slash     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
