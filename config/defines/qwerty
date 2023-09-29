@@ -41,10 +41,25 @@
 #define colon     &kp COLON             // :
 #define excla     &kp SLASH             // !
 #define minus     &kp MINUS             // -
+#define undersc   &kp UNDERSCORE        // _
 #define slash     &kp EXCLAMATION       // /
+#define bckslash  &kp BACKSLASH         //
 #define star      &kp STAR              // *
 #define ampersnd  &kp AMPERSAND         // &
 #define dquote    &kp DOUBLE_QUOTES     // "
 #define squote    &kp SINGLE_QUOTE      // '
-#define l_parnts  &kp LEFT_PARENTHESIS  // (
-#define undersc   &kp UNDERSCORE        // _
+#define l_parent  &kp LEFT_PARENTHESIS  // (
+#define r_parent  &kp RIGHT_PARENTHESIS // )
+#define l_brckt   &kp LEFT_BRACKET      // [
+#define r_brckt   &kp RIGHT_BRACKET     // ]
+#define l_brace   &kp LEFT_BRACE        // {
+#define r_brace   &kp RIGHT_BRACE       // }
+#define grave     &kp GRAVE             // `
+#define at        &kp AT                // @
+#define q_mark    &kp QMARK             // ?
+#define hash      &kp HASH              // #
+#define tilde     &kp TILDE             // ~
+#define caret     &kp CARET             // ^
+#define dollar    &kp DOLLAR            // $
+#define pipe      &kp PIPE              // |
+#define percent   &kp PERCENT           // %
