@@ -61,5 +61,6 @@
     default   { bindings = <LAYER_DEFAULT>;   };
     numbers   { bindings = <LAYER_NUMBERS>;   };
     functions { bindings = <LAYER_FUNCTIONS>; };
+    hardware  { bindings = <LAYER_HARWARE>;   };
   };
 };
