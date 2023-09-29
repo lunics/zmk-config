@@ -60,6 +60,7 @@
     compatible = "zmk,keymap";
     default    { bindings = <LAYER_DEFAULT>;    };
     numbers    { bindings = <LAYER_NUMBERS>;    };
+    symbols    { bindings = <LAYER_SYMBOLS>;    };
     navigation { bindings = <LAYER_NAVIGATION>; };
     media      { bindings = <LAYER_MEDIA>;      };
     functions  { bindings = <LAYER_FUNCTIONS>;  };
