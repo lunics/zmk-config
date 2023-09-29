@@ -25,16 +25,16 @@
 #define y_ &kp Y
 #define z_ &kp Z
 
-#define num_0 $kp NUMBER_0
-#define num_1 $kp NUMBER_1
-#define num_2 $kp NUMBER_2
-#define num_3 $kp NUMBER_3
-#define num_4 $kp NUMBER_4
-#define num_5 $kp NUMBER_5
-#define num_6 $kp NUMBER_6
-#define num_7 $kp NUMBER_7
-#define num_8 $kp NUMBER_8
-#define num_9 $kp NUMBER_9
+#define num_0 &kp NUMBER_0
+#define num_1 &kp NUMBER_1
+#define num_2 &kp NUMBER_2
+#define num_3 &kp NUMBER_3
+#define num_4 &kp NUMBER_4
+#define num_5 &kp NUMBER_5
+#define num_6 &kp NUMBER_6
+#define num_7 &kp NUMBER_7
+#define num_8 &kp NUMBER_8
+#define num_9 &kp NUMBER_9
 
 #define comma     &kp COMMA             // ,
 #define scolon    &kp SEMICOLON         // ;
