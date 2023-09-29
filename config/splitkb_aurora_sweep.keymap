@@ -59,7 +59,5 @@
   keymap {
     compatible = "zmk,keymap";
     default { bindings = <LAYER_DEFAULT>; };
-    numbers { bindings = <LAYER_NUMBERS>; };
-    symbols { bindings = <LAYER_SYMBOLS>; };
   };
 };
