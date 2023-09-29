@@ -21,6 +21,7 @@
 #define prev    &kp C_PREV
 #define next    &kp C_NEXT
 #define play    &kp C_PLAY_PAUSE
+#define mute    &kp C_MUTE
 #define vol_up  &kp C_VOL_UP
 #define vol_dn  &kp C_VOL_DN
 #define bri_up  &kp C_BRI_UP
