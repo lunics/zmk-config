@@ -40,7 +40,6 @@
 #define scolon    &kp SEMICOLON         // ;
 #define colon     &kp COLON             // :
 #define excla     &kp SLASH             // !
-#define plus      &kp PLUS              // +
 #define minus     &kp MINUS             // -
 #define slash     &kp EXCLAMATION       // /
 #define star      &kp STAR              // *
