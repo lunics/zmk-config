@@ -58,10 +58,11 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default   { bindings = <LAYER_DEFAULT>;   };
-    numbers   { bindings = <LAYER_NUMBERS>;   };
-    media     { bindings = <LAYER_MEDIA>;     };
-    functions { bindings = <LAYER_FUNCTIONS>; };
-    hardware  { bindings = <LAYER_HARDWARE>;  };
+    default    { bindings = <LAYER_DEFAULT>;    };
+    numbers    { bindings = <LAYER_NUMBERS>;    };
+    navigation { bindings = <LAYER_NAVIGATION>; };
+    media      { bindings = <LAYER_MEDIA>;      };
+    functions  { bindings = <LAYER_FUNCTIONS>;  };
+    hardware   { bindings = <LAYER_HARDWARE>;   };
   };
 };

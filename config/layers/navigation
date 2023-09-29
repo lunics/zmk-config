@@ -1,10 +1,10 @@
 #define LAYER_NAVIGATION \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-     home     end     pg_dn    pg_up    trans       trans    trans    trans    trans    trans
+     home     end     pg_dn    pg_up    trans       trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-     left    right    down       up     trans       trans    trans    trans    trans    trans
+     left    right    down       up     trans       trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-     trans   trans    trans    trans    trans       trans    trans    trans    trans    trans
+     trans   trans    trans    trans    trans       trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
-                               trans    trans       trans    trans
+                               trans    trans       trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
