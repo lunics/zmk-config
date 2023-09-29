@@ -5,4 +5,4 @@
 #include "navigation"
 #include "numbers"
 /* #include "special" */
-/* #include "symbols" */
+#include "symbols"
