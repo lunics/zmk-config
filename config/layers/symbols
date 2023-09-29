@@ -4,7 +4,7 @@
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     excla    q_mark    hash     star     none        tilde  l_parent r_parent  caret    dollar    \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd   pipe   undersc  percent    none        num_1  l_brace  r_brace    none     none     \
+   ampersnd   pipe   undersc  percent    none       squote   dquote  l_brace  r_brace   trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans   trans        trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
