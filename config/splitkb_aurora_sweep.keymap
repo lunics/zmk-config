@@ -58,7 +58,8 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default { bindings = <LAYER_DEFAULT>; };
-    numbers { bindings = <LAYER_NUMBERS>; };
+    default   { bindings = <LAYER_DEFAULT>;   };
+    numbers   { bindings = <LAYER_NUMBERS>;   };
+    functions { bindings = <LAYER_FUNCTIONS>; };
   };
 };
