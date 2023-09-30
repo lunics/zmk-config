@@ -8,23 +8,26 @@
 #include "combos/main.h"
 #include "layers/main.h"
 
+#define HM(NAME, HOLD, TAP, TRIGGER_POS) \
+NAME: NAME { \
+  label = #NAME; \
+  compatible = "zmk,behavior-hold-tap"; \
+  #binding-cells = <2>; \
+  tapping-term-ms = <270>; \
+  quick-tap-ms = <170>; \
+  global-quick-tap; \
+  flavor = "balanced"; \
+  bindings = <HOLD>, <TAP>; \
+  hold-trigger-key-positions = <TRIGGER_POS>; \
+  hold-trigger-on-release; \
+};
+
 / {
   behaviors {
     HMM(hm_mod_l, &kp, &kp, po_RIGHT)
     HMM(hm_mod_r, &kp, &kp, po_LEFT)
     HM(hm_mo_r,   &mo, &kp, po_LEFT)
-    hm_mo_l: hm_mo_l {
-      label             = #hm_mo_l                ;
-      compatible        = "zmk,behavior-hold-tap" ;
-      #binding-cells    = <2>                     ;
-      tapping-term-ms   = <270>                   ;
-      quick-tap-ms      = <170>                   ;
-      global-quick-tap                            ;
-      flavor            = "balanced"              ;
-      bindings          = <&mo>, <&kp>            ;
-      hold-trigger-key-positions = <po_RIGHT>     ;
-      hold-trigger-on-release                     ;
-    };
+    HM(hm_mo_l,   &mo, &kp, po_RIGHT)
     HT_MO
     HT_MO_SK
     SKQ
