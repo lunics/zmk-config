@@ -32,7 +32,7 @@
     MACRO_TAP(e_trema,      &kp RA(RS(SQT))  &kp E)
     MACRO_TAP(u_trema,      &kp RA(RS(SQT))  &kp U)
     MACRO_TAP(i_trema,      &kp RA(RS(SQT))  &kp I)
-    MACRO_TAP(e_acute,      &kp RA(E))
+    MACRO_TAP(e_cute,       &kp RA(E))
     MACRO_TAP(c_cedilla,    &kp RA(COMMA))
     MACRO_TAP(mc_euro,      &kp RA(NUMBER_5))
     MACRO_TAP(mc_pound,     &kp RA(RS(NUMBER_4)))
