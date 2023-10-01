@@ -1,6 +1,6 @@
 #include "combo"
 #include "combo_holdtap"
-/* #include "hm" */
+#include "hm"
 #include "hmm"
 #include "hold_tap_macro"
 #include "macro_hold"
