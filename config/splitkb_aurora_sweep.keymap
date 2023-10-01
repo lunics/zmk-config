@@ -63,6 +63,7 @@
     symbols    { bindings = <LAYER_SYMBOLS>;    };
     navigation { bindings = <LAYER_NAVIGATION>; };
     media      { bindings = <LAYER_MEDIA>;      };
+    special    { bindings = <LAYER_SPECIAL>;    };
     functions  { bindings = <LAYER_FUNCTIONS>;  };
     hardware   { bindings = <LAYER_HARDWARE>;   };
   };
