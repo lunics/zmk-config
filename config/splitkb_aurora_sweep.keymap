@@ -58,12 +58,7 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default    { bindings = <
-      a_       z_       e_       r_       t_          y_       u_       i_       o_       p_
-      &hm_mo_l l_fun q_       s_       d_       f_       g_          h_       j_       k_       l_       m_
-      w_       x_       c_       v_       b_          n_     comma    scolon   colon    excla
-                               sl_num   enter       space    enter
-    >;    };
+    default    { bindings = <LAYER_DEFAULT>;    };
     numbers    { bindings = <LAYER_NUMBERS>;    };
     symbols    { bindings = <LAYER_SYMBOLS>;    };
     navigation { bindings = <LAYER_NAVIGATION>; };
