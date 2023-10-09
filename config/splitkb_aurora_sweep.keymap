@@ -52,8 +52,6 @@
     CB_DEL_L
     CB_DEL_R
     CB_CAPS
-    CB_BOOT_L
-    CB_BOOT_R
   };
 
   keymap {
