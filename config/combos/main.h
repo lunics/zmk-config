@@ -1,5 +1,5 @@
-#include "cb_boot_l"
-#include "cb_boot_r"
+/* #include "cb_boot_l" */
+/* #include "cb_boot_r" */
 #include "cb_bspc"
 #include "cb_caps"
 #include "cb_del_l"
