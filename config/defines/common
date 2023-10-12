@@ -1,19 +1,22 @@
 #define l_def  0      // layout default
 #define l_num  1      // numbers
-#define l_sym  2      // symbols
-#define l_nav  3      // navigation
-#define l_med  4      // media
-#define l_spe  5      // special
-#define l_fun  6      // functions
-#define l_har  7      // hardward
-#define ht_fun  &hm_mo_l l_fun   // hold tap functions layer
-#define ht_med  &hm_mo_l l_med   // hold tap media layer
-#define ht_syml &hm_mo_l l_sym   // hold tap symbols layer left
-#define ht_symr &hm_mo_r l_sym   // hold tap symbols layer right
-#define ht_num  &hm_mo_l l_num   // hold tap number layer
-#define ht_nav  &hm_mo_r l_nav   // hold tap navigation layer
-#define ht_spe  &hm_mo_r l_spe   // hold tap specials layer
-#define ht_har  &hm_mo_r l_har   // hold tap hardware layer
+//#define l_sym  2      // symbols
+#define l_sym_l  2      // symbols
+#define l_sym_r  3      // symbols
+#define l_nav  4      // navigation
+#define l_med  5      // media
+#define l_spe  6      // special
+#define l_fun  7      // functions
+#define l_har  8      // hardward
+
+#define ht_fun  &hm_mo_l l_fun    // hold tap functions layer
+#define ht_med  &hm_mo_l l_med    // hold tap media layer
+#define ht_symr &hm_mo_l l_sym_r  // hold tap symbols layer left
+#define ht_syml &hm_mo_r l_sym_l  // hold tap symbols layer right
+#define ht_num  &hm_mo_l l_num    // hold tap number layer
+#define ht_nav  &hm_mo_r l_nav    // hold tap navigation layer
+#define ht_spe  &hm_mo_r l_spe    // hold tap specials layer
+#define ht_har  &hm_mo_r l_har    // hold tap hardware layer
 
 #define enter    &kp ENTER
 #define tab      &kp TAB

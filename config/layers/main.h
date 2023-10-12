@@ -5,6 +5,6 @@
 #include "navigation"
 #include "numbers"
 #include "special"
-#include "symbols"
+/* #include "symbols" */
 #include "symbols_l"
 #include "symbols_r"
