@@ -1,10 +1,10 @@
 #define LAYER_SYMBOLS \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-    grave    minus    equal     plus     none         at    l_brckt  r_brckt   slash   bckslash   \
+    grave     star    equal     plus     trans        at    l_brckt  r_brckt   dollar   trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    excla    q_mark    hash     star     none        tilde  l_parent r_parent  caret    dollar    \
+    excla    q_mark   undersc   minus    trans       tilde  l_parent r_parent  dquote   squote    \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd   pipe   undersc  percent    none       squote   dquote  l_brace  r_brace   trans     \
+   ampersnd   pipe   percent    hash     trans       caret  l_brace  r_brace   slash   bckslash   \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
-                               trans   trans        trans    trans                                \
+                               trans     trans       trans    trans                               \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
