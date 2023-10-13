@@ -2,6 +2,6 @@
 cb_esc {\
   layers        = <l_def>   ;\
   timeout-ms    = <30>      ;\
-  key-positions = <21 22>   ;\
+  key-positions = <16 17>   ;\
   bindings      = <&kp ESC> ;\
 };
