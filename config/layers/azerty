@@ -6,6 +6,5 @@
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
        w_        x_        c_        v_    ht_har B         n_    &hm_mod_l LALT comma    scolon     colon     excla     \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-               &hm_mod_l LWIN ESC &hm_mod_l LCTL ESC    &hm_mod_r RSFT SPACE &hm_mod_r l_nav ENTER                    \
+                      &hm_mod_l LGUI ENTER &sk LCTL    &sk RSFT &hm_mod_r RALT SPACE
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                           */
-// N49
