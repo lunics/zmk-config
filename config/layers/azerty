@@ -2,9 +2,9 @@
 /*╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮*/\
        a_        z_        e_        r_        t_           y_        u_        i_        o_        p_      \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-   ht_fun Q  ht_med S  ht_symr D  ht_num F     g_           h_        j_    ht_syml K  ht_spe L     m_      \
+   ht_fun Q  ht_med S  ht_symr D  ht_num F     g_           h_    ht_nav J  ht_syml K  ht_spe L     m_      \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-       w_        x_        c_        v_    ht_har B         n_    &hm_mod_l LALT comma    scolon     colon     excla     \
+       w_        x_        c_        v_    ht_har B         n_      comma    scolon     colon     excla     \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-                      &hm_mod_l LGUI ENTER &sk LCTL    &sk RSFT &hm_mod_r RALT SPACE
+                        &hm_mod_l LGUI ENTER &sk LCTL    &sk RSFT &hm_mod_r RALT SPACE                      \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                           */
