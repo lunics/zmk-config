@@ -6,5 +6,8 @@ Flash the firmware to the keyboard:
 1. double press reset button
 2. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/<user>/NICENANO *(Arch linux path destination)*
 
+Bluetooth behavior:
+right hand is the slave of left hand, it is connected to the left which is connected to the pc
+
 todo:
 - combo ? + h/l = home/end
