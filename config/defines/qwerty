@@ -44,7 +44,7 @@
 #define minus     &kp MINUS             // -
 #define undersc   &kp UNDERSCORE        // _
 #define excla     &kp EXCLAMATION       // !
-#define bckslash  &kp BACKSLASH         // \
+#define bckslash  &kp BACKSLASH         //
 #define star      &kp STAR              // *
 #define ampersnd  &kp AMPERSAND         // &
 #define dquote    &kp DOUBLE_QUOTES     // "
