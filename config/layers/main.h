@@ -1,7 +1,7 @@
 // #include "azerty"
 #include "qwerty"
 // #include "dvorak"
-// #include "colman"
+// #include "colmak"
 
 #include "functions"
 #include "hardware"
