@@ -40,11 +40,11 @@
 #define dot       &kp DOT               // .
 #define scolon    &kp SEMICOLON         // ;
 #define colon     &kp COLON             // :
-#define excla     &kp SLASH             // !
+#define slash     &kp SLASH             // /
 #define minus     &kp MINUS             // -
 #define undersc   &kp UNDERSCORE        // _
-#define slash     &kp EXCLAMATION       // /
-#define bckslash  &kp BACKSLASH         //
+#define excla     &kp EXCLAMATION       // !
+#define bckslash  &kp BACKSLASH         // \
 #define star      &kp STAR              // *
 #define ampersnd  &kp AMPERSAND         // &
 #define dquote    &kp DOUBLE_QUOTES     // "
