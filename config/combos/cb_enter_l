@@ -2,6 +2,6 @@
 cb_enter_l {\
   layers        = <l_def l_nav> ;\
   timeout-ms    = <30>          ;\
-  key-positions = <11 1213>     ;\
+  key-positions = <11 12 13>     ;\
   bindings      = <&kp ENTER>   ;\
 };
