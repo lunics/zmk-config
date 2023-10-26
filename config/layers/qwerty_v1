@@ -1,10 +1,10 @@
-#define LAYER_SPECIAL \
+#define LAYER_DEFAULT \
 /*╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮*/\
-   &a_ccmflx &o_ccmflx  &e_grave   trans     trans      &u_ccmflx &u_grave  &i_trema    trans     trans     \
+      a_        z_        e_         r_        t_           y_        u_        i_        o_        p_      \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-   &a_grave  &e_ccmflx  &e_cute  &e_trema    trans        trans   &u_trema  &i_ccmflx   trans     trans     \
+   ht_fun Q &hm_mod_l LALT S ht_symr D  ht_num F g_     ht_syml H     j_        k_     ht_spe L   dquote    \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-     trans     trans   &c_cedilla  trans     trans        trans     trans     trans     trans     trans     \
+       w_        x_        c_        v_    ht_har B         n_        m_   &hm_mod_r LALT COMMA dot colon   \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-                                   trans     trans        trans     trans                                   \
-/*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
+               &hm_mod_l LWIN ESC &hm_mod_l LCTL TAB    &hm_mod_r l_nav SPACE &hm_mod_r LSFT ENTER          \
+/*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                           */
