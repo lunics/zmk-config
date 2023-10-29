@@ -1,10 +1,10 @@
 #define LAYER_SYMBOLS_R \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-    trans    trans    trans    trans    trans      l_brace  r_brace   slash   bckslash    at      \
+    trans    trans    trans    trans    trans      l_brace  r_brace   slash      gt       lt      \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    trans    trans    trans    trans    trans      l_parent r_parent  dquote   squote   tilde     \
+    trans    trans    trans    trans    trans      l_parent r_parent  dquote   squote     at      \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    trans    trans    trans    trans    trans      l_brckt  r_brckt   caret    dollar   trans     \
+    trans    trans    trans    trans    trans      l_brckt  r_brckt   caret    dollar  bckslash   \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans   trans        trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
