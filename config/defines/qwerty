@@ -55,6 +55,8 @@
 #define r_brckt   &kp RIGHT_BRACKET     // ]
 #define l_brace   &kp LEFT_BRACE        // {
 #define r_brace   &kp RIGHT_BRACE       // }
+#define gt        &kp GREATER_THAN      // >
+#define lt        &kp LESS_THAN         // <
 #define grave     &kp GRAVE             // `
 #define at        &kp AT                // @
 #define q_mark    &kp QMARK             // ?
