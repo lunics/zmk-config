@@ -2,6 +2,6 @@
 cb_enter_r {\
   layers        = <l_def>     ;\
   timeout-ms    = <30>        ;\
-  key-positions = <16 17>     ;\
+  key-positions = <15 16>     ;\
   bindings      = <&kp ENTER> ;\
 };
