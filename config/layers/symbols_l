@@ -4,7 +4,7 @@
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     excla    q_mark    hash     star    tilde       trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd   pipe   undersc  percent    none       trans    trans    trans    trans    trans     \
+   ampersnd   pipe   undersc   scolon   percent     trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans   trans        trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
