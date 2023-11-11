@@ -2,8 +2,7 @@
 /* #include "cb_boot_r" */
 #include "cb_backspace"
 #include "cb_caps"
-#include "cb_del_l"
-#include "cb_del_r"
+#include "cb_del"
 #include "cb_enter_l"
 #include "cb_enter_r"
 #include "cb_esc"

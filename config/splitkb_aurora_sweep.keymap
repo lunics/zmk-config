@@ -49,8 +49,7 @@
     CB_REPEAT
     CB_ENTER_L
     CB_ENTER_R
-    CB_DEL_L
-    CB_DEL_R
+    CB_DEL
     CB_CAPS
   };
 
