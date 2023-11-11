@@ -1,7 +1,8 @@
-#define CB_ENTER_R \
-cb_enter_r {\
-  layers        = <l_def>     ;\
-  timeout-ms    = <30>        ;\
-  key-positions = <15 16>     ;\
-  bindings      = <&kp ENTER> ;\
+#define CB_ENTER \
+cb_enter {\
+  layers        = <l_def l_nav> ;\
+  timeout-ms    = <30>          ;\
+  key-positions = <15 16>       ;\
+  bindings      = <&kp ENTER>   ;\
+  require-prior-idle-ms = <150> ;\
 };

@@ -47,8 +47,7 @@
     CB_BACKSPACE
     CB_ESC
     CB_REPEAT
-    CB_ENTER_L
-    CB_ENTER_R
+    CB_ENTER
     CB_DEL
     CB_CAPS
   };
