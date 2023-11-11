@@ -1,7 +1,8 @@
-#define CB_DEL_R \
-cb_del_r {\
+#define CB_DEL \
+cb_del {\
   layers        = <l_def l_nav> ;\
   timeout-ms    = <70>          ;\
-  key-positions = <26 27 28>    ;\
+  key-positions = <21 22>       ;\
   bindings      = <&kp DEL>     ;\
+  require-prior-idle-ms = <150> ;\
 };
