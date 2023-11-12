@@ -1,7 +1,7 @@
 // combo behavior that take a hold-tap as bindings
 #define COMBO_HOLDTAP(NAME, TIMEOUT, POSITION, HOLDTAP) \
 NAME {\
-  layers        = <la_DEF>        ;\
+  layers        = <l_def>         ;\
   timeout-ms    = <TIMEOUT>       ;\
   slow-release                    ;\
   key-positions = <POSITION>      ;\
