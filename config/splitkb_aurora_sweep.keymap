@@ -16,6 +16,7 @@
     HM(hm_mo_l,   &mo, &kp, po_RIGHT)
     HT_MO
     HT_MO_SK
+    HT_MOD
     SKQ
     SKQX
   };
