@@ -66,3 +66,4 @@
 #define dollar    &kp DOLLAR            // $
 #define pipe      &kp PIPE              // |
 #define percent   &kp PERCENT           // %
+#define lctrl     &kp LCTRL
