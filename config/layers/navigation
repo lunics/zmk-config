@@ -2,7 +2,7 @@
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
     trans    trans    bri_dn   bri_up   trans        home    pg_dn    pg_up     end     trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    trans     play    vol_dn   vol_up   trans        left     down      up     right    trans     \
+    trans     play    vol_dn   vol_up   lctrl        left     down      up     right    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     rewind  fforward   prev     next    trans       trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
