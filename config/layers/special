@@ -1,8 +1,8 @@
 #define LAYER_SPECIAL \
 /*╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮*/\
-   &a_ccmflx &o_ccmflx  &e_grave   trans     trans      &u_ccmflx &u_grave  &i_trema    trans     trans     \
+   &a_ccmflx &o_ccmflx  &e_cute    trans     trans      &u_ccmflx &u_grave  &i_trema    trans     trans     \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-   &a_grave  &e_ccmflx  &e_cute  &e_trema    trans        trans   &u_trema  &i_ccmflx   trans     trans     \
+   &a_grave  &e_ccmflx &e_grave  &e_trema    trans        trans   &u_trema  &i_ccmflx   trans     trans     \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
      trans     trans   &c_cedilla  trans     trans        trans     trans     trans     trans     trans     \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
