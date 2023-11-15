@@ -10,4 +10,9 @@ Bluetooth behavior:
 right hand is the slave of left hand, it is connected to the left which is connected to the pc
 
 todo:
+C_AC_SCROLL_UP      Scroll Up
+K_SCROLL_UP         Scroll Up
+C_AC_SCROLL_DOWN    Scroll Down
+K_SCROLL_DOWN       Scroll Down
+- combo sdf = del ?
 - combo ? + h/l = home/end
