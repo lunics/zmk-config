@@ -4,7 +4,7 @@
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     trans     play    vol_dn   vol_up   lctrl        left     down      up     right    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    rewind  fforward   prev     next    trans       trans  C_AC_SCROLL_UP C_AC_SCROLL_DOWN trans    trans     \
+    rewind  fforward   prev     next    trans       trans  C_AC_SCROLL_DOWN C_AC_SCROLL_UP trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans    trans       trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */

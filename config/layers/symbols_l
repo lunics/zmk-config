@@ -1,10 +1,10 @@
 #define LAYER_SYMBOLS_L \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-    grave    minus    equal     plus     none       trans    trans    trans    trans    trans     \
+    grave    minus    equal     plus   percent      trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     excla    q_mark    hash     star    tilde       trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd   pipe   undersc   scolon   percent     trans    trans    trans    trans    trans     \
+   ampersnd   pipe   undersc   scolon   trans       trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans   trans        trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
