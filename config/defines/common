@@ -18,6 +18,9 @@
 #define ht_spe   &hm_mo_r l_spe    // hold tap specials layer
 #define ht_har   &hm_mo_r l_har    // hold tap hardware layer
 #define ht_winl  &hm_mod_l LWIN
+#define ht_ctll  &hm_mod_l LCTL
+#define ht_ctlr  &hm_mod_r LCTL
+#define ht_altl  &hm_mod_l LALT
 
 #define enter    &kp ENTER
 #define tab      &kp TAB
