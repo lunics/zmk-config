@@ -9,5 +9,5 @@
                             ht_shft ESC ht_navl SPACE   ht_numr ENTER ht_sper TAB                           \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
 
-#include "symbol_l"
-#include "symbol_r"
+#include "symbols_l"
+#include "symbols_r"
