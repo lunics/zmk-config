@@ -2,7 +2,7 @@
 /* #include "qwerty" */
 /* #include "dvorak" */
 /* #include "colmak" */
-#include "ergol/*"
+#include "ergol/default"
 
 #include "functions"
 #include "hardware"
