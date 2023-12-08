@@ -6,7 +6,7 @@
 #include "macros/main.h"
 #include "behaviors/main.h"
 #include "combos/main.h"
-#include "layers/34_keys/main.h"
+#include "layers/aurora_sweep/main.h"
 
 / {
   behaviors {
