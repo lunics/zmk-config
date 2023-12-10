@@ -37,11 +37,11 @@
     MACRO_TAP(u_trema,      &kp RA(RS(SQT))  &kp U)
     MACRO_TAP(e_cute,       &kp RA(E))
     MACRO_TAP(c_cedilla,    &kp RA(COMMA))
-    MACRO_TAP(mc_euro,      &kp RA(NUMBER_5))
-    MACRO_TAP(mc_pound,     &kp RA(RS(NUMBER_4)))
-    MACRO_TAP(mc_degree,    &kp RA(RS(NUMBER_0)))
-    MACRO_TAP(mc_trademark, &kp RA(V))
-    MACRO_TAP(mc_copyright, &kp RA(C))
+    MACRO_TAP(euro,         &kp RA(NUMBER_5))
+    MACRO_TAP(pound,        &kp RA(RS(NUMBER_4)))
+    MACRO_TAP(degree,       &kp RA(RS(NUMBER_0)))
+    MACRO_TAP(trademark,    &kp RA(V))
+    MACRO_TAP(copyright,    &kp RA(C))
   };
 
   combos {
