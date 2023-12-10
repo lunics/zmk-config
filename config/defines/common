@@ -1,13 +1,13 @@
-#define l_def  0      // layout default
-#define l_num  1      // numbers
-//#define l_sym  2      // symbols
-#define l_sym_l  2      // symbols
-#define l_sym_r  3      // symbols
-#define l_nav  4      // navigation
-#define l_med  5      // media
-#define l_spe  6      // special
-#define l_fun  7      // functions
-#define l_har  8      // hardward
+#define l_def    0    // layout default
+#define l_num    1    // numbers
+//#define l_sym  2    // symbols
+#define l_sym_l  2    // symbols
+#define l_sym_r  3    // symbols
+#define l_nav    4    // navigation
+#define l_med    5    // media
+#define l_spe    6    // special
+#define l_fun    7    // functions
+#define l_har    8    // hardward
 
 #define ht_fun   &hm_mo_l  l_fun    // hold tap functions layer
 #define ht_med   &hm_mo_l  l_med    // hold tap media layer
@@ -24,8 +24,8 @@
 #define ht_ctll  &hm_mod_l LCTL
 #define ht_ctlr  &hm_mod_r LCTL
 #define ht_altl  &hm_mod_l LALT
+#define ht_altr  &hm_mod_r LALT
 #define ht_shft  &ht_mod   LSFT
-
 
 #define enter    &kp ENTER
 #define tab      &kp TAB
