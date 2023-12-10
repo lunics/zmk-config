@@ -10,9 +10,4 @@
 #include "navigation"
 #include "numbers"
 #include "special"
-
 /* #include "symbols" */
-/* #include "symbols_l_qwerty" */
-/* #include "symbols_r_qwerty" */
-/* #include "symbols_l_ergol" */
-/* #include "symbols_r_ergol" */
