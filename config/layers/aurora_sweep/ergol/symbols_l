@@ -4,7 +4,7 @@
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     undersc  minus     hash     star    scolon      trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd  excla    degree    euro    pound       trans    trans    trans    trans    trans     \
+   ampersnd  excla      trans    trans    trans     trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans    trans       trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
