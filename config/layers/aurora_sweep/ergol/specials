@@ -1,14 +1,10 @@
-#define LAYER_DEFAULT \
+#define LAYER_SPECIAL \
 /*╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮*/\
-      q_        w_        e_         r_        t_           y_    &hm_mod_r LALT U i_     o_        p_      \
+     trans     trans   &o_ccmflx   trans    trans       &u_ccmflx &u_grave  &i_trema    trans     trans     \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-   ht_symr A &hm_mod_l LWIN S &hm_mod_l LCTL D &hm_mod_l LALT F g_ &hm_mod_r LCTL H j_ k_ ht_syml L m_      \
+    &a_grave  &e_grave  &e_cute   &e_trema    trans        trans   &u_trema  &i_ccmflx   trans     trans     \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-       z_    ht_fun X      c_        v_    ht_har B         n_     dquote    comma       dot      colon     \
+   &a_ccmflx   trans   &e_ccmflx  trans     trans        trans     trans     trans     trans     trans     \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-               &ht_mod LSFT ESC &hm_mo_l l_nav SPACE    &hm_mo_r l_num ENTER &hm_mo_r l_spe TAB             \
+                                   trans     trans        trans     trans                                   \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
-
-#include "symbols_l"
-#include "symbols_r"
-#include "specials"
