@@ -4,10 +4,10 @@
 #define l_sym_l  2    // symbols
 #define l_sym_r  3    // symbols
 #define l_nav    4    // navigation
-#define l_med    5    // media
-#define l_spe    6    // special
-#define l_fun    7    // functions
-#define l_har    8    // hardward
+//#define l_med    5    // media
+#define l_spe    5    // special
+#define l_fun    6    // functions
+#define l_har    7    // hardward
 
 #define ht_fun   &hm_mo_l  l_fun    // hold tap functions layer
 #define ht_med   &hm_mo_l  l_med    // hold tap media layer
