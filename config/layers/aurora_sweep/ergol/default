@@ -10,6 +10,7 @@
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
 
 #include "functions"
+#include "navigation"
 #include "numbers"
 #include "specials"
 #include "symbols_l"
