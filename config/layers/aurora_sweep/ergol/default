@@ -9,6 +9,7 @@
                             ht_shft ESC ht_navl SPACE   ht_numr ENTER ht_sper TAB                           \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
 
+#include "defines"
 #include "functions"
 #include "navigation"
 #include "numbers"
