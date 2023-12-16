@@ -27,6 +27,11 @@
 #define ht_altr  &hm_mod_r LALT
 #define ht_shft  &ht_mod   LSFT
 
+#define t5  &td_t5
+#define i6  &td_i6
+#define g2  &td_g2
+#define y3  &td_y3
+
 #define enter    &kp ENTER
 #define tab      &kp TAB
 #define space    &kp SPACE
