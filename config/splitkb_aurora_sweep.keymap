@@ -42,7 +42,7 @@
     MACRO_TAP(mt_degree,       &kp RA(RS(NUMBER_0)))
     MACRO_TAP(mt_trademark,    &kp RA(V))
     MACRO_TAP(mt_copyright,    &kp RA(C))
-    TAPDANCE(_g2, g_, num_2)
+    TAPDANCE(g2_, g_, num_2)
   };
 
   combos {
