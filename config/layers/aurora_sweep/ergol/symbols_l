@@ -1,10 +1,10 @@
 #define LAYER_SYMBOLS_L \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-    grave    pipe     equal    plus     percent     trans    trans    trans    trans    trans     \
+    grave    pipe     equal     plus    percent     trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     undersc  minus     hash     star    scolon      trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd  excla    degree    euro    pound       trans    trans    trans    trans    trans     \
+   ampersnd  excla    degree    euro    tilde       trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
-                               trans    trans       trans    trans                                \
+                               trans    pound       trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
