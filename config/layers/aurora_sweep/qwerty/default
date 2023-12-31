@@ -9,6 +9,7 @@
                &ht_mod LSFT ESC &hm_mo_l l_nav SPACE    &hm_mo_r l_num ENTER &hm_mo_r l_spe TAB             \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
 
+#include "defines"
 #include "functions"
 #include "numbers"
 #include "specials"

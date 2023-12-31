@@ -1,0 +1,2 @@
+#define cb_enter_pos 15 16
+#define cb_esc_pos   16 17
