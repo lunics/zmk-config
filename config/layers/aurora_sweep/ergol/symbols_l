@@ -2,9 +2,9 @@
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
     grave    pipe     equal     plus    percent     trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    undersc  minus     hash     star    scolon      trans    trans    trans    trans    trans     \
+    hash     star     scolon    excla    trans      trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-   ampersnd  excla    degree    euro    tilde       trans    trans    trans    trans    trans     \
+   ampersnd  degree   undersc   tilde    trans      trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
-                               trans    pound       trans    trans                                \
+                                euro     pound      trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */
