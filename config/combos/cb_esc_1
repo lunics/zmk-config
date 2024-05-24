@@ -1,4 +1,4 @@
-#define CB_ESC \
+#define CB_ESC_1 \
 cb_esc_1 {\
   layers        = <l_def l_nav>  ;\
   timeout-ms    = <30>           ;\
