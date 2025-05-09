@@ -1,13 +1,17 @@
 # Splitkb Aurora Sweep
 
-Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/aurora-sweep) with the [ZMK Firmware](https://zmk.dev/docs)
+Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/aurora-sweep) with the [ZMK Firmware](https://zmk.dev/docs).
 
-Flash the firmware to the keyboard:
+The default layout is in [Ergo-L](https://ergol.org/).
+
+## Flash the firmware to the keyboard:
+
 1. double press the reset button
-2. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/<user>/NICENANO *(for Arch Linux)*
+2. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/USER/NICENANO
 
-Pairing keyboard with the laptop:
-1. select bluetooth channel on splitkb: ht_har B > bt_sel n
+## Pairing keyboard with the laptop:
+
+1. select bluetooth channel on splitkb: [ht_har B](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default) > [bt_sel n](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/hardware)
 1. open bluetooth manager cli: bluetoothctl
 2. turn the controller (laptop) on: power on
 2. enable the controller: pairable on
@@ -17,7 +21,8 @@ Pairing keyboard with the laptop:
 The left hand is the master and the right hand is the slave.
 The right is connected to the left which is connected to the pc.
 
-todo:
+### Todo
+
 C_AC_SCROLL_UP      Scroll Up
 K_SCROLL_UP         Scroll Up
 C_AC_SCROLL_DOWN    Scroll Down
