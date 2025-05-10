@@ -2,24 +2,42 @@
 
 Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/aurora-sweep) with the [ZMK Firmware](https://zmk.dev/docs).
 
-The default layout is in [Ergo-L](https://ergol.org/).
+Current layout of this keyboard [link](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/original), inspired from [Ergo-L](https://ergol.org/).
+
+Only qwerty computers are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
+
+Example for Hyrpland:
+```
+input {
+  kb_layout = us
+  ...
+}
+```
 
 ## Flash the firmware to the keyboard:
 
+1. Download firmware from the latest workflow of the Github actions: [example](https://github.com/lunics/zmk-config/actions/runs/14944270056).
 1. double press the reset button
 2. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/USER/NICENANO
 
 ## Pairing keyboard with the laptop:
 
-1. select bluetooth channel on splitkb: [ht_har B](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default) > [bt_sel n](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/hardware)
-1. open bluetooth manager cli: bluetoothctl
-2. turn the controller (laptop) on: power on
-2. enable the controller: pairable on
-4. scan devices: scan on
-5. pair the controller with the splitkb: pair <MAC>
+1. Turn on the left kb: pwr button UP, turn on right kb: pwr button DOWN (don't trust the pwr mark on the pcb).
+2. Select bluetooth channel on splitkb: [ht_har B](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default) + [bt_sel n](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/hardware)
+3. Setup bluetooth controller:
+```sh
+bluetoothctl            # open the cli bluetooth manager
+  power on              # turn the controller (laptop) on
+  pairable on           # enable the controller for pairing
+  scan on               # scan devices
+  pair MAC_ADDR         # pair the controller with the splitkb
+  connect MAC_ADDR      # connect the controller with the splitkb
+  scan off
+  pairable off
+```
 
-The left hand is the master and the right hand is the slave.
-The right is connected to the left which is connected to the pc.
+The left kb is the master and the right one is the slave.
+The right is connected to the left, which is connected to the pc.
 
 ### Todo
 
