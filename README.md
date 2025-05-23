@@ -4,7 +4,7 @@ Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/a
 
 Current layout of this keyboard [link](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/original), inspired from [Ergo-L](https://ergol.org/).
 
-Only qwerty computers are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
+Only qwerty laptops are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
 
 Example for Hyrpland:
 ```
@@ -16,9 +16,12 @@ input {
 
 ## Flash the firmware to the keyboard:
 
-1. Download firmware from the latest workflow of the Github actions: [example](https://github.com/lunics/zmk-config/actions/runs/14944270056).
-1. double press the reset button
-2. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/USER/NICENANO
+1. Plug in the left kb to the laptop.
+2. Double press the reset button.
+3. Download firmware from the latest workflow of the Github actions: [example](https://github.com/lunics/zmk-config/actions/runs/14944270056).
+4. Unzip the firmware.zip.
+5. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/$USER/NICENANO
+*Repeat the operation for the right kb.*
 
 ## Pairing keyboard with the laptop:
 
@@ -37,7 +40,7 @@ bluetoothctl            # open the cli bluetooth manager
 ```
 
 The left kb is the master and the right one is the slave.
-The right is connected to the left, which is connected to the pc.
+The right is connected to the left, which is connected to the laptop.
 
 ### Todo
 
