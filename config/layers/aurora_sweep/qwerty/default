@@ -1,16 +1,17 @@
 #define LAYER_DEFAULT \
 /*╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮*/\
-      q_        w_        e_         r_        t_           y_    &hm_mod_r LALT U i_     o_        p_      \
+      q_        w_        e_         r_        t_           y_        u_        i_        o_        p_      \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-   ht_symr A &hm_mod_l LWIN S &hm_mod_l LCTL D &hm_mod_l LALT F g_ &hm_mod_r LCTL H j_ k_ ht_syml L m_      \
+   ht_symr A ht_winl S ht_ctll D ht_altl F     g_           h_    ht_ctlr J     k_        l_    ht_syml M   \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
        z_    ht_fun X      c_        v_    ht_har B         n_      comma    squote     colon      dot      \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-               &ht_mod LSFT ESC &hm_mo_l l_nav SPACE    &hm_mo_r l_num ENTER &hm_mo_r l_spe TAB             \
+                            ht_shft ESC ht_navl SPACE   ht_numr ENTER ht_sper TAB                           \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */
 
 #include "defines"
 #include "functions"
+#include "navigation"
 #include "numbers"
 #include "specials"
 #include "symbols_l"

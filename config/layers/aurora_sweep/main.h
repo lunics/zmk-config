@@ -1,8 +1,8 @@
 /* #include "azerty" */
-/* #include "qwerty" */
-/* #include "dvorak" */
 /* #include "colmak" */
-#include "ergol/default"
+/* #include "dvorak" */
+/* #include "ergol/default" */
+#include "qwerty/default"
 
 /* #include "functions" */
 #include "hardware"
