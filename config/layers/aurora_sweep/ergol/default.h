@@ -9,10 +9,10 @@
                             ht_shft ESC ht_navl SPACE   ht_numr ENTER ht_sper TAB                           \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */\
 
-#include "defines"
-#include "functions"
-#include "navigation"
-#include "numbers"
-#include "specials"
-#include "symbols_l"
-#include "symbols_r"
+#include "defines.h"
+#include "functions.h"
+#include "navigation.h"
+#include "numbers.h"
+#include "specials.h"
+#include "symbols_l.h"
+#include "symbols_r.h"

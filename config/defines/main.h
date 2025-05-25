@@ -1,4 +1,4 @@
-#include "common"
-/* #include "azerty" */
-#include "qwerty"
-#include "macro_tap"
+#include "common.h"
+/* #include "azerty.h" */
+#include "qwerty.h"
+#include "macro_tap.h"
