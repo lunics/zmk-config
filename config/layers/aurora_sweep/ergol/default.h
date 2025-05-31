@@ -10,7 +10,6 @@
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */\
 
 #include "defines.h"
-#include "functions.h"
 #include "specials.h"
 #include "symbols_l.h"
 #include "symbols_r.h"

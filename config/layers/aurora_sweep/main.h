@@ -1,12 +1,12 @@
-/* #include "azerty" */
+/* #include "azerty/default.h" */
 /* #include "colmak/default.h" */
 /* #include "dvorak/default.h" */
 #include "ergol/default.h"
 /* #include "qwerty/default.h" */
 
-/* #include "functions.h" */
+#include "functions.h"
 #include "hardware.h"
 #include "navigation.h"
 #include "numbers.h"
-/* #include "special.h" */
 /* #include "symbols.h" */
+/* ## REMOVE symbols.h ? *
