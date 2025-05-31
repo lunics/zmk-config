@@ -11,7 +11,6 @@
 
 #include "defines.h"
 #include "functions.h"
-#include "navigation.h"
 #include "specials.h"
 #include "symbols_l.h"
 #include "symbols_r.h"
