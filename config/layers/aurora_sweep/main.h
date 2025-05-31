@@ -8,6 +8,6 @@
 #include "hardware.h"
 /* #include "media.h" */
 /* #include "navigation.h" */
-/* #include "numbers.h" */
+#include "numbers.h"
 /* #include "special.h" */
 /* #include "symbols.h" */
