@@ -8,5 +8,4 @@
 #include "hardware.h"
 #include "navigation.h"
 #include "numbers.h"
-/* #include "symbols.h" */
-/* ## REMOVE symbols.h ? *
+/* ## REMOVE symbols.h ? */
