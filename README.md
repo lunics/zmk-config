@@ -2,7 +2,7 @@
 
 Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/aurora-sweep) with the [ZMK Firmware](https://zmk.dev/docs).
 
-Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/original), inspired from [Ergo-L](https://ergol.org/).
+Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default.h), inspired from [Ergo-L](https://ergol.org/).
 
 ## Mapping
 
@@ -21,12 +21,12 @@ Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob
 ## Functions
 
 ```
-ht_symr A = keep pressed a to enable symbols on the right kb
-ht_winl S =
+ht_symr A               Hold Tap Symbol Right = keep pressed A to enable symbols on the right kb or tap the letter A
+ht_winl S               Hold Tap Windows Left = keep pressed S to simulate the left Windows key or tap the letter S
 ht_ctll E 
 ht_altl N   
 ht_ctlr R    
-t5        
+t5                      = &td_t5 = TAPDANCE(td_t5, t_, num_5) = tap once the letter T = t, tape twice the letter T = 5
 i6     
 ht_syml U
 ht_fun X    
