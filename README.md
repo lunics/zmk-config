@@ -2,16 +2,42 @@
 
 Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/aurora-sweep) with the [ZMK Firmware](https://zmk.dev/docs).
 
-Current layout of this keyboard [link](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/original), inspired from [Ergo-L](https://ergol.org/).
+Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/original), inspired from [Ergo-L](https://ergol.org/).
 
-Only qwerty laptops are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
+## Mapping
 
-Example for Hyrpland:
 ```
-input {
-  kb_layout = us
-  ...
-}
+╭─────────┬─────────┬─────────┬─────────┬─────────╮ ╭─────────┬─────────┬─────────┬─────────┬─────────╮
+|    q    |    c    |    o    |    p    |    w    | |    j    |    m    |    d    |    '    |    f    |
+├─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┤
+|    a    |    s    |    e    |    n    |    ,    | |    l    |    r    |    t    |    i    |    u    |
+├─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┤
+|   z_    |    x    |    -    |    v    |    b    | |    .    |    h    |    g    |    y    |    k    |
+╰─────────┴─────────┴─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┴─────────┴─────────╯
+                              |   esc   |  space  | |  enter  |   tab   |
+                              ╰─────────┴─────────╯ ╰─────────┴─────────╯
+```
+
+## Functions
+
+```
+ht_symr A = keep pressed a to enable symbols on the right kb
+ht_winl S =
+ht_ctll E 
+ht_altl N   
+ht_ctlr R    
+t5        
+i6     
+ht_syml U
+ht_fun X    
+ht_har B       
+ht_altr H    
+g2        
+y3
+ht_shft ESC
+ht_navl SPACE
+ht_numr ENTER
+ht_sper TAB
 ```
 
 ## Flash the firmware to the keyboard:
@@ -41,6 +67,18 @@ bluetoothctl            # open the cli bluetooth manager
 
 The left kb is the master and the right one is the slave.
 The right is connected to the left, which is connected to the laptop.
+
+### Issue with azerty system
+
+Only qwerty laptops are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
+
+Example for Hyrpland:
+```
+input {
+  kb_layout = us
+  ...
+}
+```
 
 ### Todo
 
