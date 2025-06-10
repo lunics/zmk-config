@@ -6,7 +6,7 @@ Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob
 
 ## Mapping
 
-```
+```txt
 ╭─────────┬─────────┬─────────┬─────────┬─────────╮ ╭─────────┬─────────┬─────────┬─────────┬─────────╮
 |    q    |    c    |    o    |    p    |    w    | |    j    |    m    |    d    |    '    |    f    |
 ├─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -53,7 +53,7 @@ ht_sper TAB             keep pressed enable special layer on the right hand
 1. Turn on the left kb: pwr button UP, turn on right kb: pwr button DOWN (don't trust the pwr mark on the pcb).
 2. Select bluetooth channel on splitkb: [ht_har B](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default) + [bt_sel n](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/hardware)
 3. Setup bluetooth controller:
-```sh
+```txt
 bluetoothctl            # open the cli bluetooth manager
   power on              # turn the controller (laptop) on
   pairable on           # enable the controller for pairing
