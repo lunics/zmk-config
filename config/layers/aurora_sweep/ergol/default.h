@@ -6,7 +6,7 @@
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
       z_     ht_fun X    minus       v_     ht_har B       dot    ht_altr H    g_       comma      k_       \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-                           ht_shft ESC ht_navl SPACE    ht_navl ENTER ht_numr TAB                           \
+                           ht_sper ESC ht_shft SPACE    ht_navl ENTER ht_numr TAB                           \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */\
 
 #include "defines.h"
