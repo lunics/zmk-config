@@ -20,24 +20,23 @@ Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob
 
 ## Functions
 
-```
+```txt
 ht_symr A               Hold Tap Symbol Right = keep pressed A to enable symbols on the right kb or tap the letter A
 ht_winl S               Hold Tap Windows Left = keep pressed S to simulate the left Windows key or tap the letter S
 ht_ctll E 
 ht_altl N   
 ht_ctlr R    
-t5                      = &td_t5 = TAPDANCE(td_t5, t_, num_5) = tap once the letter T = t, tape twice the letter T = 5
+t5                      tap once the letter T = t, tape twice the letter T = 5;     (Tape Dance = &td_t5 = TAPDANCE(t_, num_5))
 i6     
-ht_syml U
 ht_fun X    
 ht_har B       
 ht_altr H    
 g2        
 y3
-ht_shft ESC
-ht_navl SPACE
+ht_shft ESC             keep pressed = SHIFT, simple tap = ESCAPE
+ht_navl SPACE           keep pressed enable navigation layer on the left hand
 ht_numr ENTER
-ht_sper TAB
+ht_sper TAB             keep pressed enable special layer on the right hand
 ```
 
 ## Flash the firmware to the keyboard:
