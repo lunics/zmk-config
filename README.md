@@ -67,6 +67,30 @@ bluetoothctl            # open the cli bluetooth manager
 The left kb is the master and the right one is the slave.
 The right is connected to the left, which is connected to the laptop.
 
+### Build on podman
+```sh
+git clone https://github.com/lunics/zmk-config
+mkdir -p local_zmk-config/parent
+podman volume create --driver local -o o=bind -o type=none -o device="/home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config/" zmk-config
+podman volume create --driver local -o o=bind -o type=none -o device="/home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config/parent/" zmk-modules
+
+podman run -it --rm \
+  --security-opt label=disable \
+  --workdir /zmk \
+  -v ./lunics_zmk-config:/zmk \
+  -v /home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config:/workspaces/zmk-config \
+  -v /home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config/parent:/workspaces/zmk-modules \
+  -p 3000:3000 \
+  zmkfirmware/zmk-build-arm:stable /bin/bash
+
+west init -l ./config
+west update
+# west zephyr-export
+west build -d build/nice_nano_v2 -b nice_nano_v2 zmk/app
+    -- -DSHIELD=aurora_left
+west build -t flash
+```
+
 ### Issue with azerty system
 
 Only qwerty laptops are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
