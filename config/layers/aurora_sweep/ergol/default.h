@@ -2,11 +2,11 @@
 /*╭─────────┬─────────┬─────────┬─────────┬─────────╮  ╭─────────┬─────────┬─────────┬─────────┬─────────╮*/\
       q_        c_        o_         p_        w_           j_       m_        d_       squote     y_       \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-   ht_symr A ht_winl S ht_ctll E ht_altl N     f_           l_    ht_ctlr R    t_        i_     ht_syml U   \
+    symr A    winl S    ctll E    altl N       f_           l_      ctlr R     t_         i_      syml U    \
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
-      z_     ht_fun X    minus       v_     ht_har B       dot    ht_altr H    g_       comma      k_       \
+      z_       fun X     minus       v_      har B          dot     altr H     g_       comma      k_       \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-                           ht_sper ESC ht_shft SPACE    ht_navl ENTER ht_numr TAB                           \
+                                 sper ESC  shft SPACE  navl ENTER  numr TAB                                 \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */\
 
 #include "defines.h"

@@ -10,23 +10,23 @@
 #define l_fun    6    // functions
 #define l_har    7    // hardward
 
-#define ht_fun   &hm_mo_l  l_fun    // hold tap functions layer
-#define ht_med   &hm_mo_l  l_med    // hold tap media layer
-#define ht_symr  &hm_mo_l  l_sym_r  // hold tap symbols layer left
-#define ht_syml  &hm_mo_r  l_sym_l  // hold tap symbols layer right
-#define ht_numl  &hm_mo_l  l_num    // hold tap number layer
-#define ht_numr  &hm_mo_r  l_num
-#define ht_navl  &hm_mo_l  l_nav
-#define ht_navr  &hm_mo_r  l_nav    // hold tap navigation layer
-#define ht_spel  &hm_mo_l  l_spe    // hold tap specials layer
-#define ht_sper  &hm_mo_r  l_spe
-#define ht_har   &hm_mo_r  l_har    // hold tap hardware layer
-#define ht_winl  &hm_mod_l LWIN
-#define ht_ctll  &hm_mod_l LCTL
-#define ht_ctlr  &hm_mod_r LCTL
-#define ht_altl  &hm_mod_l LALT
-#define ht_altr  &hm_mod_r LALT
-#define ht_shft  &ht_mod   LSFT
+#define fun   &hm_mo_l  l_fun    // hold tap functions layer
+#define med   &hm_mo_l  l_med    // hold tap media layer
+#define symr  &hm_mo_l  l_sym_r  // hold tap symbols layer left
+#define syml  &hm_mo_r  l_sym_l  // hold tap symbols layer right
+#define numl  &hm_mo_l  l_num    // hold tap number layer
+#define numr  &hm_mo_r  l_num
+#define navl  &hm_mo_l  l_nav
+#define navr  &hm_mo_r  l_nav    // hold tap navigation layer
+#define spel  &hm_mo_l  l_spe    // hold tap specials layer
+#define sper  &hm_mo_r  l_spe
+#define har   &hm_mo_r  l_har    // hold tap hardware layer
+#define winl  &hm_mod_l LWIN
+#define ctll  &hm_mod_l LCTL
+#define ctlr  &hm_mod_r LCTL
+#define altl  &hm_mod_l LALT
+#define altr  &hm_mod_r LALT
+#define shft  &ht_mod   LSFT
 
 #define t5  &td_t5
 #define i6  &td_i6
