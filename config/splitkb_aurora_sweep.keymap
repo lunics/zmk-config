@@ -58,6 +58,7 @@
     CB_ENTER
     CB_DEL
     CB_CAPS
+    CB_RSHIFT
   };
 
   keymap {
