@@ -6,7 +6,7 @@
 /*├─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┤*/\
     shft Z     fun X   numr MINUS  symr V    har B         dot      syml H    spel G    comma     shft K    \
 /*╰─────────┴─────────┴─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┴─────────┴─────────╯*/\
-                                 ctll ESC  altl SPACE  navl SPACE winl ENTER                                \
+                                 navl ESC  altl SPACE  ctll SPACE winl ENTER                                \
 /*                              ╰─────────┴─────────╯  ╰─────────┴─────────╯                              */\
 
 #include "defines.h"
