@@ -9,3 +9,4 @@
 #include "cb_tab.h"
 #include "cb_rshift.h"
 #include "cb_ctrl_shift.h"
+#include "cb_alt_shift.h"

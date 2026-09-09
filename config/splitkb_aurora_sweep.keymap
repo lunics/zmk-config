@@ -59,6 +59,7 @@
     CB_CAPS
     CB_RSHIFT
     CB_CTRL_SHIFT
+    CB_ALT_SHIFT
   };
 
   keymap {

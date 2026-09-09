@@ -4,3 +4,4 @@
 #define cb_esc_pos        17 18
 #define cb_enter_pos      16 18
 #define cb_ctrl_shift_pos 20 30
+#define cb_alt_shift_pos  20 31
