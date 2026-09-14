@@ -1,9 +1,0 @@
-#define HT_MO_SK \
-ht_mo_sk: hold_tap_momentary_layer_sticky_modifier {\
-  compatible      = "zmk,behavior-hold-tap" ;\
-  label           = "ht_mo_sk"              ;\
-  #binding-cells  = <2>                     ;\
-  flavor          = "hold-preferred"        ;\
-  tapping-term-ms = <200>                   ;\
-  bindings        = <&mo>, <&skq>           ;\
-};

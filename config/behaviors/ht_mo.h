@@ -1,9 +1,0 @@
-#define HT_MO \
-ht_mo: hold_tap_momentary_layer {\
-  compatible      = "zmk,behavior-hold-tap" ;\
-  label           = "ht_mo"                 ;\
-  #binding-cells  = <2>                     ;\
-  flavor          = "hold-preferred"        ;\
-  tapping-term-ms = <200>                   ;\
-  bindings        = <&mo>, <&kp>            ;\
-};

@@ -1,11 +1,9 @@
+// hold-tap without positional trigger, same reason as HM
 #define HMM(NAME, HOLD, TAP, TRIGGER_POS) \
-NAME: NAME {\
-  label             = #NAME                   ;\
-  compatible        = "zmk,behavior-hold-tap" ;\
-  #binding-cells    = <2>                     ;\
-  tapping-term-ms   = <270>                   ;\
-  quick-tap-ms      = <170>                   ;\
-  global-quick-tap                            ;\
-  flavor            = "balanced"              ;\
-  bindings          = <HOLD>, <TAP>           ;\
-};
+ZMK_HOLD_TAP(NAME, \
+  flavor          = "balanced"; \
+  tapping-term-ms = <270>; \
+  quick-tap-ms    = <170>; \
+  global-quick-tap; \
+  bindings        = <HOLD>, <TAP>; \
+)
