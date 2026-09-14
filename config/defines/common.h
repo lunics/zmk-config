@@ -3,7 +3,6 @@
 //#define l_sym  2    // symbols
 #define l_sym_l  2    // symbols
 #define l_sym_r  3    // symbols
-#define po_LEFT  0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33
 #define l_nav    4    // navigation
 //#define l_med    5    // media
 #define l_spe    5    // special
@@ -82,5 +81,5 @@
 #define bt_nxt   &bt BT_NXT
 #define bt_sel   &bt BT_SEL
 
-#define po_RIGHT 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33
-#define po_LEFT  0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33
+#define po_RIGHT KEYS_R THUMBS
+#define po_LEFT  KEYS_L THUMBS
