@@ -11,34 +11,34 @@
 #include "combos/main.h"
 #include "layers/aurora_sweep/main.h"
 
-/ {
-  macros {
-    MACRO_TAP(mt_a_grave,      &kp RA(GRAVE)    &kp A)
-    MACRO_TAP(mt_e_grave,      &kp RA(GRAVE)    &kp E)
-    MACRO_TAP(mt_u_grave,      &kp RA(GRAVE)    &kp U)
-    MACRO_TAP(mt_a_ccmflx,     &kp RA(NUMBER_6) &kp A)
-    MACRO_TAP(mt_e_ccmflx,     &kp RA(NUMBER_6) &kp E)
-    MACRO_TAP(mt_i_ccmflx,     &kp RA(NUMBER_6) &kp I)
-    MACRO_TAP(mt_o_ccmflx,     &kp RA(NUMBER_6) &kp O)
-    MACRO_TAP(mt_u_ccmflx,     &kp RA(NUMBER_6) &kp U)
-    MACRO_TAP(mt_a_trema,      &kp RA(RS(SQT))  &kp A)
-    MACRO_TAP(mt_e_trema,      &kp RA(RS(SQT))  &kp E)
-    MACRO_TAP(mt_i_trema,      &kp RA(RS(SQT))  &kp I)
-    MACRO_TAP(mt_o_trema,      &kp RA(RS(SQT))  &kp O)
-    MACRO_TAP(mt_u_trema,      &kp RA(RS(SQT))  &kp U)
-    MACRO_TAP(mt_e_cute,       &kp RA(E))
-    MACRO_TAP(mt_c_cedilla,    &kp RA(COMMA))
-    MACRO_TAP(mt_euro,         &kp RA(NUMBER_5))
-    MACRO_TAP(mt_pound,        &kp RA(RS(NUMBER_4)))
-    MACRO_TAP(mt_degree,       &kp RA(RS(NUMBER_0)))
-    MACRO_TAP(mt_trademark,    &kp RA(V))
-    MACRO_TAP(mt_copyright,    &kp RA(C))
-    TAPDANCE(td_t5, t_, num_5)
-    TAPDANCE(td_i6, i_, num_6)
-    TAPDANCE(td_g2, g_, num_2)
-    TAPDANCE(td_y3, y_, num_3)
-  };
+// dead-key sequences for a US-International host
+ZMK_MACRO(mt_a_grave,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(GRAVE) &kp A>;)
+ZMK_MACRO(mt_e_grave,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(GRAVE) &kp E>;)
+ZMK_MACRO(mt_u_grave,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(GRAVE) &kp U>;)
+ZMK_MACRO(mt_a_ccmflx,  wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(NUMBER_6) &kp A>;)
+ZMK_MACRO(mt_e_ccmflx,  wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(NUMBER_6) &kp E>;)
+ZMK_MACRO(mt_i_ccmflx,  wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(NUMBER_6) &kp I>;)
+ZMK_MACRO(mt_o_ccmflx,  wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(NUMBER_6) &kp O>;)
+ZMK_MACRO(mt_u_ccmflx,  wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(NUMBER_6) &kp U>;)
+ZMK_MACRO(mt_a_trema,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(SQT)) &kp A>;)
+ZMK_MACRO(mt_e_trema,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(SQT)) &kp E>;)
+ZMK_MACRO(mt_i_trema,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(SQT)) &kp I>;)
+ZMK_MACRO(mt_o_trema,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(SQT)) &kp O>;)
+ZMK_MACRO(mt_u_trema,   wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(SQT)) &kp U>;)
+ZMK_MACRO(mt_e_cute,    wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(E)>;)
+ZMK_MACRO(mt_c_cedilla, wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(COMMA)>;)
+ZMK_MACRO(mt_euro,      wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(NUMBER_5)>;)
+ZMK_MACRO(mt_pound,     wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(NUMBER_4))>;)
+ZMK_MACRO(mt_degree,    wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(RS(NUMBER_0))>;)
+ZMK_MACRO(mt_trademark, wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(V)>;)
+ZMK_MACRO(mt_copyright, wait-ms = <0>; tap-ms = <0>; bindings = <&kp RA(C)>;)
 
+ZMK_TAP_DANCE(td_t5, tapping-term-ms = <200>; bindings = <t_>, <num_5>;)
+ZMK_TAP_DANCE(td_i6, tapping-term-ms = <200>; bindings = <i_>, <num_6>;)
+ZMK_TAP_DANCE(td_g2, tapping-term-ms = <200>; bindings = <g_>, <num_2>;)
+ZMK_TAP_DANCE(td_y3, tapping-term-ms = <200>; bindings = <y_>, <num_3>;)
+
+/ {
   combos {
     compatible = "zmk,combos";
     CB_TAB
