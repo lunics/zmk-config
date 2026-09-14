@@ -38,16 +38,11 @@ ZMK_TAP_DANCE(td_i6, tapping-term-ms = <200>; bindings = <i_>, <num_6>;)
 ZMK_TAP_DANCE(td_g2, tapping-term-ms = <200>; bindings = <g_>, <num_2>;)
 ZMK_TAP_DANCE(td_y3, tapping-term-ms = <200>; bindings = <y_>, <num_3>;)
 
-/ {
-  keymap {
-    compatible = "zmk,keymap";
-    default    { bindings = <LAYER_DEFAULT>;    };
-    numbers    { bindings = <LAYER_NUMBERS>;    };
-    symbols_l  { bindings = <LAYER_SYMBOLS_L>;  };
-    symbols_r  { bindings = <LAYER_SYMBOLS_R>;  };
-    navigation { bindings = <LAYER_NAVIGATION>; };
-    special    { bindings = <LAYER_SPECIAL>;    };
-    functions  { bindings = <LAYER_FUNCTIONS>;  };
-    hardware   { bindings = <LAYER_HARDWARE>;   };
-  };
-};
+ZMK_LAYER(default,    LAYER_DEFAULT)
+ZMK_LAYER(numbers,    LAYER_NUMBERS)
+ZMK_LAYER(symbols_l,  LAYER_SYMBOLS_L)
+ZMK_LAYER(symbols_r,  LAYER_SYMBOLS_R)
+ZMK_LAYER(navigation, LAYER_NAVIGATION)
+ZMK_LAYER(special,    LAYER_SPECIAL)
+ZMK_LAYER(functions,  LAYER_FUNCTIONS)
+ZMK_LAYER(hardware,   LAYER_HARDWARE)
