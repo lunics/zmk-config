@@ -1,12 +1,12 @@
-/* #include "cb_boot_l.h" */
-/* #include "cb_boot_r.h" */
-#include "cb_backspace.h"
-#include "cb_caps.h"
-#include "cb_del.h"
-#include "cb_enter.h"
-#include "cb_esc.h"
-#include "cb_repeat.h"
-#include "cb_tab.h"
-#include "cb_rshift.h"
-#include "cb_ctrl_shift.h"
-#include "cb_alt_shift.h"
+// ZMK_COMBO(name, bindings, key positions, layers, timeout, require-prior-idle)
+// names keep the cb_ prefix: bare ones like tab or enter collide with defines/common.h
+ZMK_COMBO(cb_tab,        &kp TAB,            cb_tab_pos,        l_def,       30, 150)
+ZMK_COMBO(cb_backspace,  &kp BSPC,           cb_backspace_pos,  l_def,       30)
+ZMK_COMBO(cb_esc,        &kp ESC,            cb_esc_pos,        l_def l_nav, 30, 150)
+ZMK_COMBO(cb_enter,      &kp ENTER,          cb_enter_pos,      l_def l_nav, 30, 150)
+ZMK_COMBO(cb_rshift,     &kp RIGHT_SHIFT,    cb_rshift_pos,     l_def,       30, 150)
+ZMK_COMBO(cb_ctrl_shift, &kp LC(LEFT_SHIFT), cb_ctrl_shift_pos, l_def,       30, 150)
+ZMK_COMBO(cb_alt_shift,  &kp LA(LEFT_SHIFT), cb_alt_shift_pos,  l_def,       30, 150)
+ZMK_COMBO(cb_repeat,     &key_repeat,        LT2 LT1,           l_def l_nav, 30, 150)
+ZMK_COMBO(cb_del,        &kp DEL,            LB3 LB2,           l_def l_nav, 70, 150)
+ZMK_COMBO(cb_caps,       &caps_word,         RB1 RB2,           l_def,       40)
