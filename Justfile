@@ -6,6 +6,7 @@ config := absolute_path('config')
 build := absolute_path('.build')
 out := absolute_path('firmware')
 draw := absolute_path('draw')
+volume := "/run/media/$USER/NICENANO"
 
 build_matrix := "build.yaml"
 
@@ -78,6 +79,30 @@ flash-v1 expr: (build expr)
     [[ -z $targets ]] && echo "No matching targets found. Aborting..." >&2 && exit 1
     echo "$targets" | while IFS=, read -r board shield snippet artifact cmake_args; do
         just _flash_single "$board" "$shield" "$artifact"
+    done
+
+# copy firmware to each half in turn, waiting for its bootloader volume
+[group('build & draw')]
+flash: (build "sweep")
+    #!/usr/bin/env bash
+    set -euo pipefail
+    volume="{{ volume }}"
+
+    for side in left right; do
+        uf2="{{ out }}/splitkb_aurora_sweep_$side.uf2"
+        [[ -f "$uf2" ]] || { echo "Missing $uf2. Aborting..." >&2; exit 1; }
+
+        if [[ ! -d "$volume" ]]; then
+            echo "Waiting for the $side half: double-tap reset so $volume mounts..."
+            while [[ ! -d "$volume" ]]; do sleep 1; done
+        fi
+
+        echo "Flashing the $side half..."
+        cp "$uf2" "$volume"/
+        sync
+
+        # the board reboots and unmounts itself once the copy has landed
+        while [[ -d "$volume" ]]; do sleep 1; done
     done
 
 # parse & plot keymap
