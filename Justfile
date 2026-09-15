@@ -34,7 +34,7 @@ _build_single $board $shield $snippet $artifact cmake_args *west_args:
     fi
 
 # flash firmware for single board & shield combination
-# only needed for boards which do not support UF2
+# uses the board default west runner: uf2 mass-storage, or a debug probe
 _flash_single $board $shield $artifact:
     #!/usr/bin/env bash
     set -euo pipefail
@@ -68,9 +68,9 @@ build expr *west_args:
         just _build_single "$board" "$shield" "$snippet" "$artifact" "$cmake_args" {{ west_args }}
     done
 
-# flash firmware for targets matching <expr>
+# flash firmware for targets matching <expr> through west runners
 [group('build & draw')]
-flash expr: (build expr)
+flash-v1 expr: (build expr)
     #!/usr/bin/env bash
     set -euo pipefail
     targets=$(just build_matrix={{build_matrix}} _parse_targets {{ expr }})
