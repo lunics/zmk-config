@@ -34,6 +34,9 @@ manifest:
     - name: zmk-helpers
       path: modules/zmk/helpers
       revision: b1548efd28d2cc64b9506654e6883695c258190f # v0.3.0
+    - name: zmk-tri-state
+      path: modules/zmk/tri-state
+      revision: 0c6eaf55d2da0d85b943e02d72831c2d8ea64501 # main (2026-08-31)
 
     # Avoid downloading GBs of unused Zephyr modules. Remove this section to
     # restore the default (needed for less common hardware).
