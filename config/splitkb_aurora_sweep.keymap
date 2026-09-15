@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
@@ -38,6 +39,13 @@ ZMK_TAP_DANCE(td_i6, tapping-term-ms = <200>; bindings = <i_>, <num_6>;)
 ZMK_TAP_DANCE(td_g2, tapping-term-ms = <200>; bindings = <g_>, <num_2>;)
 ZMK_TAP_DANCE(td_y3, tapping-term-ms = <200>; bindings = <y_>, <num_3>;)
 
+// toggles the mouse layer, auto-exits on any key outside it
+ZMK_TRI_STATE(smart_mouse,
+  bindings = <&tog l_mou>, <&none>, <&tog l_mou>;
+  ignored-key-positions = <LT3 LT2 LH0 LH1 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1>;
+  ignored-layers = <l_mou l_nav>;
+)
+
 ZMK_LAYER(numbers,    LAYER_NUMBERS)
 ZMK_LAYER(symbols_l,  LAYER_SYMBOLS_L)
 ZMK_LAYER(symbols_r,  LAYER_SYMBOLS_R)
@@ -45,3 +53,4 @@ ZMK_LAYER(navigation, LAYER_NAVIGATION)
 ZMK_LAYER(special,    LAYER_SPECIAL)
 ZMK_LAYER(functions,  LAYER_FUNCTIONS)
 ZMK_LAYER(hardware,   LAYER_HARDWARE)
+ZMK_LAYER(mouse,      LAYER_MOUSE)
