@@ -7,8 +7,8 @@ ZMK_LAYER(default,
 //├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
      winl A     altl S    shftl E     ctll N       f_           l_       ctlr R    shftr T     altr I     winr U
 //├──────────┼──────────┼──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┼──────────┼──────────┤
-     shft Z     fun X    numr MINUS   symr V     har B         dot       syml H     spel G     comma      shft K
+       z_       fun X    numr MINUS   symr V     har B         dot       syml H     spel G     comma        k_
 //╰──────────┴──────────┴──────────┼──────────┼──────────┤ ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                    navl ESC   altl SPACE   ctll SPACE winl ENTER
+                                    navl ESC   space        space      enter
 //                                 ╰──────────┴──────────╯ ╰──────────┴──────────╯
 )
