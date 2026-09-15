@@ -1,0 +1,7 @@
+# Linguist has no Device Tree language; C++ is the least bad match.
+*.keymap text linguist-language=C++
+*.dtsi   text linguist-language=C++
+*.h      text linguist-language=C++
+
+# Board config, not recognized by extension alone.
+*.conf   text linguist-language=INI
