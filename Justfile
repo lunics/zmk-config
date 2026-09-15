@@ -81,28 +81,46 @@ flash-v1 expr: (build expr)
         just _flash_single "$board" "$shield" "$artifact"
     done
 
+# wait for a bootloader volume, then copy one firmware file onto it
+[private]
+_copy uf2 label:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    volume="{{ volume }}"
+
+    [[ -f "{{ uf2 }}" ]] || { echo "Missing {{ uf2 }}. Aborting..." >&2; exit 1; }
+
+    if [[ ! -d "$volume" ]]; then
+        echo "Waiting for {{ label }}: double-tap reset so $volume mounts..."
+        while [[ ! -d "$volume" ]]; do sleep 1; done
+    fi
+
+    echo "Flashing {{ label }}..."
+    cp "{{ uf2 }}" "$volume"/
+    sync
+
+    # the board reboots and unmounts itself once the copy has landed
+    while [[ -d "$volume" ]]; do sleep 1; done
+
 # copy firmware to each half in turn, waiting for its bootloader volume
 [group('build & draw')]
 flash: (build "sweep")
     #!/usr/bin/env bash
     set -euo pipefail
-    volume="{{ volume }}"
-
     for side in left right; do
-        uf2="{{ out }}/splitkb_aurora_sweep_$side.uf2"
-        [[ -f "$uf2" ]] || { echo "Missing $uf2. Aborting..." >&2; exit 1; }
+        just _copy "{{ out }}/splitkb_aurora_sweep_$side.uf2" "the $side half"
+    done
 
-        if [[ ! -d "$volume" ]]; then
-            echo "Waiting for the $side half: double-tap reset so $volume mounts..."
-            while [[ ! -d "$volume" ]]; do sleep 1; done
-        fi
-
-        echo "Flashing the $side half..."
-        cp "$uf2" "$volume"/
-        sync
-
-        # the board reboots and unmounts itself once the copy has landed
-        while [[ -d "$volume" ]]; do sleep 1; done
+# wipe stored settings on both halves, then put the firmware back
+[group('build & draw')]
+reset: (build "settings_reset") (build "sweep")
+    #!/usr/bin/env bash
+    set -euo pipefail
+    for side in left right; do
+        just _copy "{{ out }}/settings_reset.uf2" "the $side half (settings reset)"
+    done
+    for side in left right; do
+        just _copy "{{ out }}/splitkb_aurora_sweep_$side.uf2" "the $side half (firmware)"
     done
 
 # parse & plot keymap
