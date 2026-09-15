@@ -27,6 +27,8 @@
 #define altl  &hm_mod_l LALT
 #define altr  &hm_mod_r LALT
 #define shft  &ht_mod   LSFT
+#define shftl &hm_mod_l LSFT
+#define shftr &hm_mod_r RSFT
 
 #define t5  &td_t5
 #define i6  &td_i6
