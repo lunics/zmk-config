@@ -6,6 +6,7 @@
 
 #include "functions.h"
 #include "hardware.h"
+#include "mouse.h"
 #include "navigation.h"
 #include "numbers.h"
 #include "symbols_l.h"

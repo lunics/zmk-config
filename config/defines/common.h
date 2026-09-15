@@ -8,6 +8,7 @@
 #define l_spe    5    // special
 #define l_fun    6    // functions
 #define l_har    7    // hardward
+#define l_mou    8    // mouse
 
 #define fun   &hm_mo_l  l_fun    // hold tap functions layer
 #define med   &hm_mo_l  l_med    // hold tap media layer
@@ -87,6 +88,18 @@
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS LH1 LH0 RH0 RH1
+
+#define ms_up    &mmv MOVE_UP
+#define ms_down  &mmv MOVE_DOWN
+#define ms_left  &mmv MOVE_LEFT
+#define ms_right &mmv MOVE_RIGHT
+#define wh_up    &msc SCRL_UP
+#define wh_down  &msc SCRL_DOWN
+#define wh_left  &msc SCRL_LEFT
+#define wh_right &msc SCRL_RIGHT
+#define clk_l    &mkp LCLK
+#define clk_m    &mkp MCLK
+#define clk_r    &mkp RCLK
 
 #define po_RIGHT KEYS_R THUMBS
 #define po_LEFT  KEYS_L THUMBS
