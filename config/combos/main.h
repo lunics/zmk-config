@@ -10,3 +10,4 @@ ZMK_COMBO(cb_alt_shift,  &kp LA(LEFT_SHIFT), cb_alt_shift_pos,  l_def,       30,
 ZMK_COMBO(cb_repeat,     &key_repeat,        LT2 LT1,           l_def l_nav, 30, 150)
 ZMK_COMBO(cb_del,        &kp DEL,            LB3 LB2,           l_def l_nav, 70, 150)
 ZMK_COMBO(cb_caps,       &caps_word,         RB1 RB2,           l_def,       40)
+ZMK_COMBO(cb_mouse,      &smart_mouse,       cb_mouse_pos,      l_def l_nav, 30, 150)

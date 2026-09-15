@@ -5,3 +5,4 @@
 #define cb_enter_pos      RM1 RM3
 #define cb_ctrl_shift_pos LB4 LH1
 #define cb_alt_shift_pos  LB4 LH0
+#define cb_mouse_pos      LT3 LT2
