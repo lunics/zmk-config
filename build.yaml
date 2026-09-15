@@ -1,14 +1,10 @@
-# This file is the build matrix consumed by the Justfile. Each entry is a
-# board & shield combination; `artifact-name` overrides the generated file
-# name in firmware/.
----
 include:
-  - board: nice_nano@2.0.0//zmk
-    shield: splitkb_aurora_sweep_left
+  - board:         nice_nano@2.0.0//zmk
+    shield:        splitkb_aurora_sweep_left
     artifact-name: splitkb_aurora_sweep_left
-  - board: nice_nano@2.0.0//zmk
-    shield: splitkb_aurora_sweep_right
+  - board:         nice_nano@2.0.0//zmk
+    shield:        splitkb_aurora_sweep_right
     artifact-name: splitkb_aurora_sweep_right
-  - board: nice_nano@2.0.0//zmk
-    shield: settings_reset
+  - board:         nice_nano@2.0.0//zmk
+    shield:        settings_reset
     artifact-name: settings_reset
