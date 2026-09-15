@@ -38,7 +38,6 @@ ZMK_TAP_DANCE(td_i6, tapping-term-ms = <200>; bindings = <i_>, <num_6>;)
 ZMK_TAP_DANCE(td_g2, tapping-term-ms = <200>; bindings = <g_>, <num_2>;)
 ZMK_TAP_DANCE(td_y3, tapping-term-ms = <200>; bindings = <y_>, <num_3>;)
 
-ZMK_LAYER(default,    LAYER_DEFAULT)
 ZMK_LAYER(numbers,    LAYER_NUMBERS)
 ZMK_LAYER(symbols_l,  LAYER_SYMBOLS_L)
 ZMK_LAYER(symbols_r,  LAYER_SYMBOLS_R)
