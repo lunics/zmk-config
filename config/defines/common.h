@@ -80,6 +80,7 @@
 #define sl_num   &sl 1  // sticky layout numbers
 
 #define bt_clr   &bt BT_CLR
+#define bt_clr_all &bt BT_CLR_ALL
 #define bt_prv   &bt BT_PRV
 #define bt_nxt   &bt BT_NXT
 #define bt_sel   &bt BT_SEL
