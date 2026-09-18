@@ -68,6 +68,10 @@ SIMPLE_MORPH(dot_morph,    SFT, &kp DOT,   &kp COLON)
 SIMPLE_MORPH(squote_morph, SFT, &kp SQT,   &kp DQT)
 SIMPLE_MORPH(minus_morph,  SFT, &kp MINUS, &kp PLUS)
 
+// paren combos: shift picks the matching angle bracket
+SIMPLE_MORPH(lpar_morph,   SFT, &kp LPAR,  &kp LT)
+SIMPLE_MORPH(rpar_morph,   SFT, &kp RPAR,  &kp GT)
+
 // left thumb: tap space, shift + tap closes the sentence, hold the navigation layer
 ZMK_MACRO(dot_spc,
   wait-ms  = <0>;
