@@ -60,3 +60,6 @@ ZMK_LAYER(special,    LAYER_SPECIAL)
 ZMK_LAYER(functions,  LAYER_FUNCTIONS)
 ZMK_LAYER(hardware,   LAYER_HARDWARE)
 ZMK_LAYER(mouse,      LAYER_MOUSE)
+
+// the hardware layer has no key of its own: hold nav and fun together
+ZMK_CONDITIONAL_LAYER(hardware, l_nav l_fun, l_har)
