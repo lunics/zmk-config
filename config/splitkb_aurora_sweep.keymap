@@ -49,7 +49,7 @@ ZMK_TRI_STATE(smart_mouse,
 // alt-tab window switcher, stays active while the nav layer drives it
 ZMK_TRI_STATE(swap_win,
   bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-  ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;
+  ignored-key-positions = <LT2 RM1 RM2 RM3 RM4>;
 )
 
 ZMK_LAYER(numbers,    LAYER_NUMBERS)
