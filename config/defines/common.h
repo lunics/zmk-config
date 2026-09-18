@@ -10,7 +10,7 @@
 #define l_har    7    // hardward
 #define l_mou    8    // mouse
 
-#define fun   &hm_mo_l  l_fun    // hold tap functions layer
+#define fun   &hm_mo_r  l_fun    // hold tap functions layer, the F-keys sit on the holding hand
 #define med   &hm_mo_l  l_med    // hold tap media layer
 #define symr  &hm_mo_l  l_sym_r  // hold tap symbols layer left
 #define syml  &hm_mo_r  l_sym_l  // hold tap symbols layer right
