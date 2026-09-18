@@ -20,7 +20,6 @@
 #define navr  &hm_mo_r  l_nav    // hold tap navigation layer
 #define spel  &hm_mo_l  l_spe    // hold tap specials layer
 #define sper  &hm_mo_r  l_spe
-#define har   &hm_mo_r  l_har    // hold tap hardware layer
 #define winl  &hm_mod_l LWIN
 #define winr  &hm_mod_r RWIN
 #define ctll  &hm_mod_l LCTL
