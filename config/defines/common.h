@@ -16,7 +16,7 @@
 #define syml  &hm_mo_r  l_sym_l  // hold tap symbols layer right
 #define numl  &hm_mo_l  l_num    // hold tap number layer
 #define numr  &hm_mo_r  l_num
-#define navl  &hm_mo_l  l_nav
+#define navl  &hm_mo_nav l_nav  // non positional: the nav layer uses both hands
 #define navr  &hm_mo_r  l_nav    // hold tap navigation layer
 #define spel  &hm_mo_l  l_spe    // hold tap specials layer
 #define sper  &hm_mo_r  l_spe
@@ -57,6 +57,25 @@
 #define bri_dn   &kp C_BRI_DN
 #define rewind   &kp C_REWIND
 #define fforward &kp C_FAST_FORWARD
+
+// nav cluster: tap moves, long tap jumps to the line/document edge
+#define nav_left  &mt_home 0   LEFT
+#define nav_right &mt_end 0    RIGHT
+#define nav_up    &mt LC(HOME) UP
+#define nav_down  &mt LC(END)  DOWN
+#define nav_bspc  &mt LC(BSPC) BSPC
+#define nav_del   &mt LC(DEL)  DEL
+
+#define insert   &kp INS
+#define cancel   &kp K_CANCEL  // releases the pending sticky keys
+#define alt_f4   &kp LA(F4)
+#define sh_tab   &kp LS(TAB)
+#define swapper  &swap_win
+
+#define sk_win   &sk LGUI
+#define sk_alt   &sk LALT
+#define sk_shft  &sk LSFT
+#define sk_ctrl  &sk LCTRL
 
 #define f1       &kp F1
 #define f2       &kp F2
