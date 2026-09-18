@@ -9,6 +9,7 @@
 #include "symbols_l.h"
 #include "symbols_r.h"
 #include "navigation.h"
+#include "ergol/specials.h"
 #include "functions.h"
 #include "hardware.h"
 #include "mouse.h"
