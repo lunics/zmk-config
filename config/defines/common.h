@@ -92,10 +92,18 @@
 #define equal    &kp EQUAL
 #define plus     &kp PLUS
 
-// functions layer: the system keys urob keeps beside the F-row
+// functions layer: system keys on the inner column
 #define pscrn    &kp PSCRN
 #define slck     &kp SLCK
 #define pause    &kp PAUSE_BREAK
+
+// functions layer: urob's media and virtual desktop cluster
+#define hm_vol_dn &hm_mod_r RSFT C_VOL_DN
+#define dsk_prev  &hm_mod_r LCTL LG(LC(LEFT))
+#define dsk_next  &hm_mod_r LALT LG(LC(RIGHT))
+#define dsk_mgr   &kp LA(GRAVE)
+#define pin_win   &kp LG(LC(LS(Q)))
+#define pin_app   &kp LG(LC(LS(A)))
 
 #define trans    &trans
 #define null     &none
