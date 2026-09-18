@@ -92,6 +92,11 @@
 #define equal    &kp EQUAL
 #define plus     &kp PLUS
 
+// functions layer: the system keys urob keeps beside the F-row
+#define pscrn    &kp PSCRN
+#define slck     &kp SLCK
+#define pause    &kp PAUSE_BREAK
+
 #define trans    &trans
 #define null     &none
 //#define ko     &none   // KO: parse error: expected number or parenthesized expression
