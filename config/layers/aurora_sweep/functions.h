@@ -1,10 +1,10 @@
 #define LAYER_FUNCTIONS \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-     trans   trans    trans    trans    trans       trans      f7       f8       f9      f12      \
+     f12       f7       f8       f9     pscrn       trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-     trans   trans    trans    trans    trans       trans      f4       f5       f6      f11      \
+     f11       f4       f5       f6      slck       trans    trans    trans    trans    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-     trans   trans    trans    trans    trans       trans      f1       f2       f3      f10      \
+     f10       f1       f2       f3     pause       trans    trans    trans    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
                                trans    trans       trans    trans                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */\
