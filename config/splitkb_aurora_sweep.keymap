@@ -52,7 +52,5 @@ ZMK_TRI_STATE(swap_win,
   ignored-key-positions = <LT2 RM1 RM2 RM3 RM4>;
 )
 
-ZMK_LAYER(mouse,      LAYER_MOUSE)
-
 // the hardware layer has no key of its own: hold nav and fun together
 ZMK_CONDITIONAL_LAYER(hardware, l_nav l_fun, l_har)
