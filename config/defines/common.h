@@ -96,6 +96,10 @@
 #define f12      &kp F12
 #define equal    &kp EQUAL
 #define plus     &kp PLUS
+#define comma_semi &comma_morph
+#define dot_colon  &dot_morph
+#define squote_dqt &squote_morph
+#define minus_plus &minus_morph
 
 // functions layer: system keys on the inner column
 #define pscrn    &kp PSCRN
