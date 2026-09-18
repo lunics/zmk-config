@@ -30,6 +30,9 @@
 #define shftl &hm_mod_l LSFT
 #define shftr &hm_mod_r RSFT
 
+// thumb keys, following urob's base layer
+#define spc_nav    &ht_spc  l_nav 0    // tap space, shift tap closes the sentence, hold navigation
+
 #define t5  &td_t5
 #define i6  &td_i6
 #define g2  &td_g2
