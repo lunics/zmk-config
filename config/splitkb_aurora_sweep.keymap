@@ -52,7 +52,6 @@ ZMK_TRI_STATE(swap_win,
   ignored-key-positions = <LT2 RM1 RM2 RM3 RM4>;
 )
 
-ZMK_LAYER(symbols_r,  LAYER_SYMBOLS_R)
 ZMK_LAYER(navigation, LAYER_NAVIGATION)
 ZMK_LAYER(special,    LAYER_SPECIAL)
 ZMK_LAYER(functions,  LAYER_FUNCTIONS)
