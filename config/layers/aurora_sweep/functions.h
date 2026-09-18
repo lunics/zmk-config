@@ -1,10 +1,10 @@
 #define LAYER_FUNCTIONS \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-     f12       f7       f8       f9     pscrn       trans    trans    trans    trans    trans     \
+     f12       f7       f8       f9     pscrn       trans     prev    vol_up    next    trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-     f11       f4       f5       f6      slck       trans   sk_ctrl  sk_shft   sk_alt   sk_win    \
+     f11       f4       f5       f6      slck       trans   dsk_prev hm_vol_dn dsk_next  trans    \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-     f10       f1       f2       f3     pause       trans    trans    trans    trans    trans     \
+     f10       f1       f2       f3     pause      pin_app  pin_win  dsk_mgr   trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
-                               trans    trans       trans    trans                                \
+                               trans    trans        mute     play                                \
 /*                           ╰────────┴────────╯  ╰────────┴────────╯                           */\
