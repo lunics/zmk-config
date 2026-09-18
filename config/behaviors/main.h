@@ -59,6 +59,15 @@ ZMK_HOLD_TAP(mt_end,  bindings = <&masked_end>,  <&kp>; MT_CORE)
 MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
 MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
+// shift selects the paired punctuation instead of the host's shifted symbol
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
+  ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD | MOD_R##MOD)>; bindings = <BINDING1>, <BINDING2>;)
+
+SIMPLE_MORPH(comma_morph,  SFT, &kp COMMA, &kp SEMI)
+SIMPLE_MORPH(dot_morph,    SFT, &kp DOT,   &kp COLON)
+SIMPLE_MORPH(squote_morph, SFT, &kp SQT,   &kp DQT)
+SIMPLE_MORPH(minus_morph,  SFT, &kp MINUS, &kp PLUS)
+
 // left thumb: tap space, shift + tap closes the sentence, hold the navigation layer
 ZMK_MACRO(dot_spc,
   wait-ms  = <0>;
