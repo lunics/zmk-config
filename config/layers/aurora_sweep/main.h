@@ -4,10 +4,11 @@
 #include "ergol/default.h"
 /* #include "qwerty/default.h" */
 
-#include "functions.h"
-#include "hardware.h"
-#include "mouse.h"
-#include "navigation.h"
+// the include order sets the layer indexes, see defines/common.h
 #include "numbers.h"
 #include "symbols_l.h"
 #include "symbols_r.h"
+#include "navigation.h"
+#include "functions.h"
+#include "hardware.h"
+#include "mouse.h"
