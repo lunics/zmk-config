@@ -1,10 +1,10 @@
 #define LAYER_NAVIGATION \
 /*╭──────────┬──────────┬──────────┬──────────┬──────────╮  ╭──────────┬──────────┬──────────┬──────────┬──────────╮*/\
-    alt_f4     trans      sh_tab     swapper    trans        pg_up      nav_bspc   nav_up     nav_del    trans      \
+    alt_f4      trans      sh_tab     swapper    trans         pg_up     nav_bspc    nav_up    nav_del     trans      \
 /*├──────────┼──────────┼──────────┼──────────┼──────────┤  ├──────────┼──────────┼──────────┼──────────┼──────────┤*/\
-    sk_win     sk_alt     sk_shft    sk_ctrl    trans        pg_dn      nav_left   nav_down   nav_right  enter      \
+    sk_win     sk_alt     sk_shft    sk_ctrl     trans         pg_dn     nav_left   nav_down  nav_right    enter      \
 /*├──────────┼──────────┼──────────┼──────────┼──────────┤  ├──────────┼──────────┼──────────┼──────────┼──────────┤*/\
-    trans      trans      trans      trans      trans        insert     tab        trans      trans      trans      \
+     trans      trans      trans      trans      trans         insert      tab       trans      trans      trans      \
 /*╰──────────┴──────────┴──────────┼──────────┼──────────┤  ├──────────┼──────────┼──────────┴──────────┴──────────╯*/\
-                                     trans      trans        trans      cancel                                      \
+                                      trans      trans         trans      cancel                                      \
 /*                                 ╰──────────┴──────────╯  ╰──────────┴──────────╯                                 */\
