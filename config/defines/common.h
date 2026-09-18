@@ -34,6 +34,7 @@
 #define spc_nav    &ht_spc  l_nav 0    // tap space, shift tap closes the sentence, hold navigation
 #define ret_fun    &ht_mo   l_fun RET  // tap enter, hold the functions layer
 #define smart_num  &ht_num  l_num 0    // tap the num word, double tap sticks the layer, hold numbers
+#define magic_shft &ht_shft LSFT  0    // tap a sticky shift, shift tap the caps word, hold shift
 
 #define t5  &td_t5
 #define i6  &td_i6
