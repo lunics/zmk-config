@@ -1,8 +1,8 @@
 #define LAYER_NAVIGATION \
 /*╭────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────╮*/\
-    alt_f4   trans    sh_tab  swapper   trans       pg_up   nav_bspc  trans    trans   nav_del    \
+    alt_f4   trans    sh_tab  swapper   trans       pg_up    trans   nav_bspc  nav_del  trans     \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
-    sk_win   sk_alt  sk_shft  sk_ctrl   trans       pg_dn   nav_left nav_down  nav_up nav_right   \
+    sk_win   sk_alt  sk_shft  sk_ctrl   trans       pg_dn   nav_left nav_down  nav_up  nav_right  \
 /*├────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┤*/\
     trans    trans    trans    trans    trans       insert    tab     enter    trans    trans     \
 /*╰────────┴────────┴────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────╯*/\
