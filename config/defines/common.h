@@ -32,6 +32,7 @@
 
 // thumb keys, following urob's base layer
 #define spc_nav    &ht_spc  l_nav 0    // tap space, shift tap closes the sentence, hold navigation
+#define ret_fun    &ht_mo   l_fun RET  // tap enter, hold the functions layer
 
 #define t5  &td_t5
 #define i6  &td_i6
