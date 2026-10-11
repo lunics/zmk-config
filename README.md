@@ -2,56 +2,120 @@
 
 Key mapping for the split keyboard [Aurora Sweep](https://splitkb.com/products/aurora-sweep) with the [ZMK Firmware](https://zmk.dev/docs).
 
-Current layout of this keyboard [here](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default.h), inspired from [Ergo-L](https://ergol.org/).
+Forked from [urob/zmk-config](https://github.com/urob/zmk-config): the west manifest, the nix toolchain, the `Justfile` and the keymap-drawer setup come from there, and the keymap follows its behaviors — positional home row mods, combos instead of symbol layers, smart layers on the thumbs.
+
+The letter layout is [Ergo-L](https://ergol.org/), written in [config/layers/aurora_sweep/ergol/default.h](config/layers/aurora_sweep/ergol/default.h).
 
 ## Mapping
 
+![The default layer and its combos](draw/default.svg)
+
 ```txt
 ╭─────────┬─────────┬─────────┬─────────┬─────────╮ ╭─────────┬─────────┬─────────┬─────────┬─────────╮
-|    q    |    c    |    o    |    p    |    w    | |    j    |    m    |    d    |    '    |    f    |
+|    q    |    c    |    o    |    p    |    w    | |    j    |    m    |    d    |   ' "   |    y    |
 ├─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┤
-|    a    |    s    |    e    |    n    |    ,    | |    l    |    r    |    t    |    i    |    u    |
+|  a/Gui  |  s/Alt  |  e/Sft  |  n/Ctl  |    f    | |    l    |  r/Ctl  |  t/Sft  |  i/Alt  |  u/Gui  |
 ├─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┤
-|   z_    |    x    |    -    |    v    |    b    | |    .    |    h    |    g    |    y    |    k    |
+|    z    |    x    |   - +   |    v    |    b    | |   . :   |    h    |    g    |   , ;   |    k    |
 ╰─────────┴─────────┴─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┴─────────┴─────────╯
-                              |   esc   |  space  | |  enter  |   tab   |
+                              |enter/nav|space/fn | |num word |  shift  |
                               ╰─────────┴─────────╯ ╰─────────┴─────────╯
 ```
 
-## Functions
+`a/Gui` taps `a` and holds Gui, `- +` taps `-` and shift taps `+`. The home row mods are positional: a hold only takes effect for a key pressed on the other hand.
+
+Every layer and every combo, drawn by [keymap-drawer](https://github.com/caksoylar/keymap-drawer): **[draw/base.svg](draw/base.svg)**, regenerated with `just draw`.
+
+## Layers
+
+| # | layer | reached by |
+| - | ----- | ---------- |
+| 0 | default | — |
+| 1 | numbers | right inner thumb: hold for the layer, tap for a num word, double tap to stick it |
+| 2 | symbols_l | no key, the symbols come from the combos |
+| 3 | symbols_r | no key, the symbols come from the combos |
+| 4 | navigation | left outer thumb, hold |
+| 5 | special | no key, holds the accented letters as AltGr dead keys for a US-International host |
+| 6 | functions | left inner thumb, hold |
+| 7 | hardware | conditional: navigation + functions, so both left thumb keys together |
+| 8 | mouse | combo `o` + `p`, auto-exits on any key outside the layer |
+
+The include order in [config/layers/aurora_sweep/main.h](config/layers/aurora_sweep/main.h) is what sets those indexes.
+
+## Combos
+
+Thirty combos in [config/combos/main.h](config/combos/main.h): horizontal pairs carry the edition keys, vertical pairs the symbols.
+
+| keys | combo |
+| ---- | ----- |
+| `c` + `o` | escape |
+| `o` + `p` | mouse layer |
+| `s` + `e` | tab, hold for shift + alt |
+| `x` + `v` / `x` + `-` / `-` + `v` | cut / copy / paste |
+| `m` + `d` / `d` + `'` | `(` and `)`, shift gives `<` and `>` |
+| `'` + `y` | delete |
+| `r` + `t` | backspace, hold for shift + ctrl |
+| `t` + `i` | escape, hold for shift + alt |
+| `r` + `i` | enter, hold for ctrl + alt |
+| `h` + `g` / `g` + `,` | `[` and `]`, `{` and `}` on the navigation layer |
+
+A combo sitting on home row mods is a hold-tap itself, so its own mods stay chordable.
+
+## Repository layout
 
 ```txt
-ht_symr A               Hold Tap Symbol Right = keep pressed A to enable symbols on the right kb or tap the letter A
-ht_winl S               Hold Tap Windows Left = keep pressed S to simulate the left Windows key or tap the letter S
-ht_ctll E 
-ht_altl N   
-ht_ctlr R    
-t5                      tap once the letter T = t, tape twice the letter T = 5;     (Tape Dance = &td_t5 = TAPDANCE(t_, num_5))
-i6     
-ht_fun X    
-ht_har B       
-ht_altr H    
-g2        
-y3
-ht_shft ESC             keep pressed = SHIFT, simple tap = ESCAPE
-ht_navl SPACE           keep pressed enable navigation layer on the left hand
-ht_numr ENTER
-ht_sper TAB             keep pressed enable special layer on the right hand
+zmk-workspace
+├── config/            # keymap files and west.yml
+├── draw/              # keymap-drawer config and rendered layout
+├── nix/               # the packages the dev shell needs
+├── build.yaml         # build targets
+├── flake.nix          # the nix build environment
+├── Justfile           # command definitions (`just` without args lists recipes)
+│
+├── firmware/          # ─── generated by `just build`: compiled firmware ends up here ───
+├── .build/            # ─── generated by `just build`: one west build dir per target ────
+├── modules/           # ─── generated by `just init` ────────────────────────────────────
+├── zephyr/
+└── zmk/               # ─────────────────────────────────────────────────────────────────
 ```
 
-## Flash the firmware to the keyboard:
+```txt
+config/
+├── splitkb_aurora_sweep.keymap  # the entry point, it only includes the files below
+├── splitkb_aurora_sweep.conf    # firmware options
+├── west.yml                     # ZMK, zephyr and the modules, pinned
+├── defines/                     # key aliases: letters, symbols, layers, mods
+├── macros/                      # the HM / HMM positional hold-tap templates
+├── behaviors/                   # one file per behavior: hold-taps, morphs, thumb keys
+├── combos/                      # the combos and their key positions
+└── layers/
+    └── aurora_sweep/            # one file per layer, one folder per letter layout
+```
 
-1. Plug in the left kb to the laptop.
-2. Double press the reset button.
-3. Download firmware from the latest workflow of the Github actions: [example](https://github.com/lunics/zmk-config/actions/runs/14944270056).
-4. Unzip the firmware.zip.
-5. cp firmware/splitkb_aurora_sweep_left-nice_nano_v2-zmk.uf2 /run/media/$USER/NICENANO
-*Repeat the operation for the right kb.*
+The `.keymap` and `.conf` names are fixed by the shield, ZMK looks them up as `<shield>.keymap` and `<shield>.conf`.
 
-## Pairing keyboard with the laptop:
+## Build and flash
+
+```sh
+just flash
+```
+
+It builds both halves and then waits for each bootloader volume in turn: double-tap the reset button on the left half when asked, then on the right one.
+
+```sh
+just init             # set up the west workspace, once
+just list             # list the build targets
+just build sweep      # build only, the uf2 files land in firmware/
+just reset            # wipe the stored settings, then put the firmware back
+just draw             # regenerate draw/default.svg and draw/base.svg
+```
+
+The toolchain (west, the Zephyr SDK, `keymap`, `python-yq`) comes from the nix flake: `direnv allow`, or `nix develop`.
+
+## Pairing keyboard with the laptop
 
 1. Turn on the left kb: pwr button UP, turn on right kb: pwr button DOWN (don't trust the pwr mark on the pcb).
-2. Select bluetooth channel on splitkb: [ht_har B](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/ergol/default) + [bt_sel n](https://github.com/lunics/zmk-config/blob/main/config/layers/aurora_sweep/hardware)
+2. Select a bluetooth channel on the splitkb: hold both left thumb keys for the [hardware layer](config/layers/aurora_sweep/hardware.h), then press one of the `bt_sel` keys on the left home row.
 3. Setup bluetooth controller:
 ```txt
 bluetoothctl            # open the cli bluetooth manager
@@ -66,48 +130,3 @@ bluetoothctl            # open the cli bluetooth manager
 
 The left kb is the master and the right one is the slave.
 The right is connected to the left, which is connected to the laptop.
-
-### Build on podman
-```sh
-git clone https://github.com/lunics/zmk-config
-mkdir -p local_zmk-config/parent
-podman volume create --driver local -o o=bind -o type=none -o device="/home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config/" zmk-config
-podman volume create --driver local -o o=bind -o type=none -o device="/home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config/parent/" zmk-modules
-
-podman run -it --rm \
-  --security-opt label=disable \
-  --workdir /zmk \
-  -v ./lunics_zmk-config:/zmk \
-  -v /home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config:/workspaces/zmk-config \
-  -v /home/lunics/usb_copy/linux/hardware/keyboard/zmk/local_zmk-config/parent:/workspaces/zmk-modules \
-  -p 3000:3000 \
-  zmkfirmware/zmk-build-arm:stable /bin/bash
-
-west init -l ./config
-west update
-# west zephyr-export
-west build -d build/nice_nano_v2 -b nice_nano_v2 zmk/app
-    -- -DSHIELD=aurora_left
-west build -t flash
-```
-
-### Issue with azerty system
-
-Only qwerty laptops are supported. For the azerty's, that can be changed in some UEFI or from the window manager.
-
-Example for Hyrpland:
-```
-input {
-  kb_layout = us
-  ...
-}
-```
-
-### Todo
-
-C_AC_SCROLL_UP      Scroll Up
-K_SCROLL_UP         Scroll Up
-C_AC_SCROLL_DOWN    Scroll Down
-K_SCROLL_DOWN       Scroll Down
-- combo sdf = del ?
-- combo ? + h/l = home/end
