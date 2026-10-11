@@ -1,22 +1,7 @@
 #include "ht_mo.h"
 #include "ht_mo_sk.h"
 #include "ht_mod.h"
-
-// deactivates the sticky key on the next key press
-ZMK_STICKY_KEY(skq,
-  bindings         = <&kp>;
-  release-after-ms = <200>;
-  quick-release;
-  /delete-property/ ignore-modifiers;
-)
-
-// same, but for combined modifiers like LC(LSHFT)
-ZMK_STICKY_KEY(skqx,
-  bindings         = <&kp>;
-  release-after-ms = <200>;
-  quick-release;
-  ignore-modifiers;
-)
+#include "sticky_keys.h"
 
 HMM(hm_mod_l, &kp, &kp, po_RIGHT)
 HMM(hm_mod_r, &kp, &kp, po_LEFT)
