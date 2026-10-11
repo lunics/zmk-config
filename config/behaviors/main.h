@@ -1,8 +1,4 @@
-ZMK_HOLD_TAP(ht_mo,
-  flavor          = "hold-preferred";
-  tapping-term-ms = <200>;
-  bindings        = <&mo>, <&kp>;
-)
+#include "ht_mo.h"
 
 ZMK_HOLD_TAP(ht_mo_sk,
   flavor          = "hold-preferred";
