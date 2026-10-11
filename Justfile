@@ -132,6 +132,10 @@ draw: _check_yq_version
     yq -Yi '.combos.[].l = ["Combos"]' "{{ draw }}/base.yaml"
     keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -k "ferris/sweep" >"{{ draw }}/base.svg"
 
+    # the default layer alone, keeping the combos on their own keys
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/splitkb_aurora_sweep.keymap" >"{{ draw }}/default.yaml"
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/default.yaml" -k "ferris/sweep" -s default >"{{ draw }}/default.svg"
+
 # initialize the west workspace
 [group('workspace')]
 init:
