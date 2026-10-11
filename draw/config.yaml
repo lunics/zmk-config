@@ -22,6 +22,15 @@ parse_config:
     "&kp LC(X)": Cut
     "&kp LS(INS)": Paste
 
+    "&smart_mouse": Mouse
+    "&dot_spc": Sentence
+    "&num_dance": Num Word
+
+    # the combo hold-taps carry a filler tap parameter, keep it out of the legend
+    "&hm_combo_cb_bspc RS(LCTRL) 0": { "t": Bspc, "h": Sft+Ctrl }
+    "&hm_combo_cb_esc_r RS(LALT) 0": { "t": Esc, "h": Sft+Alt }
+    "&hm_combo_cb_enter LC(LALT) 0": { "t": Enter, "h": Ctl+Alt }
+
   trans_legend: { "t": "", "type": "trans" }
 
   zmk_keycode_map:
