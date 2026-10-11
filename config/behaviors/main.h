@@ -1,10 +1,5 @@
 #include "ht_mo.h"
-
-ZMK_HOLD_TAP(ht_mo_sk,
-  flavor          = "hold-preferred";
-  tapping-term-ms = <200>;
-  bindings        = <&mo>, <&skq>;
-)
+#include "ht_mo_sk.h"
 
 ZMK_HOLD_TAP(ht_mod,
   flavor          = "hold-preferred";
