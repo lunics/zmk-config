@@ -2,7 +2,6 @@
 .direnv
 .west
 draw/base.yaml
-draw/default.yaml
 firmware
 modules
 zephyr
