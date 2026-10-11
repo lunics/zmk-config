@@ -8,4 +8,3 @@
 #include "thumb_space.h"
 #include "thumb_num.h"
 #include "thumb_shift.h"
-
