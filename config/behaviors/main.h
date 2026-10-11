@@ -1,11 +1,6 @@
 #include "ht_mo.h"
 #include "ht_mo_sk.h"
-
-ZMK_HOLD_TAP(ht_mod,
-  flavor          = "hold-preferred";
-  tapping-term-ms = <200>;
-  bindings        = <&kp>, <&kp>;
-)
+#include "ht_mod.h"
 
 // deactivates the sticky key on the next key press
 ZMK_STICKY_KEY(skq,
