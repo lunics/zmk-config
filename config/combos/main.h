@@ -31,8 +31,6 @@ ZMK_COMBO(cb_del,   &kp DEL,                RT3 RT4, l_def l_nav l_num, COMBO_TE
 ZMK_COMBO(cb_bspc,  &kp BSPC,               RM1 RM2, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LCTRL), po_LEFT)
 ZMK_COMBO(cb_esc_r, &kp ESC,                RM2 RM3, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LALT),  po_LEFT)
 ZMK_COMBO(cb_enter, &kp ENTER,              RM1 RM3, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST, LC(LALT),  po_LEFT)
-ZMK_COMBO(cb_lt,    &kp LT,                 RM1 RM2,       l_nav      , COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(cb_gt,    &kp GT,                 RM2 RM3,       l_nav      , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 ZMK_COMBO(cb_lbkt,  &kp LBKT,               RB1 RB2, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_rbkt,  &kp RBKT,               RB2 RB3, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
