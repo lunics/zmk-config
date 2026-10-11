@@ -15,7 +15,7 @@
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
 // horizontal combos, left hand
-ZMK_COMBO(cb_esc,   &kp ESC,                LT3 LT2, l_def l_nav l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cb_esc_l, &kp ESC,                LT3 LT2, l_def l_nav l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_mouse, &smart_mouse,           LT2 LT1, l_def l_nav l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_tab,   &hm_mod_l LS(LALT) TAB, LM3 LM2, l_def l_nav l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
@@ -29,7 +29,7 @@ ZMK_COMBO(cb_rpar,  &rpar_morph,            RT2 RT3, l_def l_nav l_num, COMBO_TE
 ZMK_COMBO(cb_del,   &kp DEL,                RT3 RT4, l_def l_nav l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 ZMK_COMBO(cb_bspc,  &kp BSPC,               RM1 RM2, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LCTRL), po_LEFT)
-ZMK_COMBO(cb_esc,   &kp ESC,                RM2 RM3, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LALT),  po_LEFT)
+ZMK_COMBO(cb_esc_r, &kp ESC,                RM2 RM3, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST, RS(LALT),  po_LEFT)
 ZMK_COMBO(cb_enter, &kp ENTER,              RM1 RM3, l_def       l_num, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_lt,    &kp LT,                 RM1 RM2,       l_nav      , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cb_gt,    &kp GT,                 RM2 RM3,       l_nav      , COMBO_TERM_FAST, COMBO_IDLE_FAST)
